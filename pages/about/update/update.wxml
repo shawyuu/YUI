@@ -1,0 +1,9 @@
+<view class="yu-timeline">
+  <view class="yu-time">2019</view>
+  <view class='yu-item yu-text-sky icon-collection_fill'>
+    <view class="yu-timeline-content yu-bg-sky yu-text-white">
+      <view>04/23</view>
+      <text>v1.0.0 YU组件库新版本上线</text>
+    </view>
+  </view>
+</view>

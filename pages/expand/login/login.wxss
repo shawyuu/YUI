@@ -1,0 +1,17 @@
+/* pages/expand/login/login.wxss */
+page{
+  background: #fff;
+}
+.login{
+  padding:60rpx 50rpx 0;
+  
+}
+.login .yu-form::before{
+  right: 30rpx;
+}
+.login .yu-label{
+  width: 140rpx;
+}
+.login .yu-vcode-img {
+  height: 60rpx;
+}

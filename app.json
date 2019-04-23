@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/basic/index/index",
+    "pages/basic/tag/tag",
+    "pages/basic/progress/progress",
+    "pages/basic/text/text",
+    "pages/basic/layout/layout",
+    "pages/basic/avatar/avatar",
+    "pages/basic/button/button",
+    "pages/basic/icon/icon",
+    "pages/basic/color/color",
+    "pages/component/index/index",
+    "pages/component/card/card",
+    "pages/component/swiper/swiper",
+    "pages/component/form/form",
+    "pages/component/cell/cell",
+    "pages/component/panel/panel",
+    "pages/component/tree/tree",
+    "pages/component/collapse/collapse",
+    "pages/component/timeline/timeline",
+    "pages/component/toast/toast",
+    "pages/component/dialog/dialog",
+    "pages/component/tab/tab",
+    "pages/component/table/table",
+    "pages/expand/index/index",
+    "pages/expand/login/login",
+    "pages/expand/null/null",
+    "pages/expand/footer/footer",
+    "pages/about/about/about",
+    "pages/about/index/index",
+    "pages/about/update/update"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ui",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#3565ee",
+    "list": [
+      {
+        "pagePath": "pages/basic/index/index",
+        "iconPath": "/img/menu1s.png",
+        "selectedIconPath": "/img/menu1.png",
+        "text": "基本"
+      },
+      {
+        "pagePath": "pages/component/index/index",
+        "iconPath": "/img/menu2s.png",
+        "selectedIconPath": "/img/menu2.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/expand/index/index",
+        "iconPath": "/img/menu3s.png",
+        "selectedIconPath": "/img/menu3.png",
+        "text": "其他"
+      },
+      {
+        "pagePath": "pages/about/index/index",
+        "iconPath": "/img/menu4s.png",
+        "selectedIconPath": "/img/menu4.png",
+        "text": "关于"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

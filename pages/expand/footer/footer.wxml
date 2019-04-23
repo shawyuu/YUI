@@ -1,0 +1,29 @@
+<view class="yu-title">数据可加载文字样式</view>
+<view class="yu-footer yu-bg-white">
+  <view class="yu-footer-btn">点击加载更多...</view>
+</view>
+<view class="yu-title">数据可加载按钮样式</view>
+<view class="yu-footer yu-bg-white vertical-in">
+  <view class="yu-footer-btn-border">点击加载更多...</view>
+</view>
+<view class="yu-title">数据加载完成</view>
+<view class="yu-footer yu-bg-white">
+  <view class="yu-footer-text">—— 我是有底线的 ——</view>
+</view>
+<view class="yu-footer yu-bg-white">
+  <view class="yu-footer-text">—— 没有更多了 ——</view>
+</view>
+<view class="yu-title">底部链接</view>
+<view class="yu-footer yu-bg-white">
+  <view class="yu-footer-link">底部链接</view>
+</view>
+<view class="yu-title">底部</view>
+<view class="yu-footer yu-bg-white">
+  <view class="yu-footer-text">Copyright © 2019</view>
+</view>
+<view class="yu-title">底部固定</view>
+<view class="yu-footer">
+  <view class="yu-footer-fixd">
+    <view class="yu-footer-text">Copyright © 2019</view>
+  </view>
+</view>

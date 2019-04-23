@@ -1,0 +1,7 @@
+<view class="yu-title">图标</view>
+<view class="yu-grids">
+  <view class="yu-grid yu-grid-border" wx:for="{{icon}}" wx:key="index">
+    <view class="icon-{{item.name}} icon"></view>
+    <text>{{item.name}}</text>
+  </view>
+</view>

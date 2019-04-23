@@ -1,0 +1,58 @@
+<view class="yu-title">基本单元格</view>
+<view class="yu-cells">
+  <view class="yu-cell">
+    <view class="yu-cell-bd">单元格标题</view>
+  </view>
+</view>
+
+<view class="yu-title">带说明的单元格</view>
+<view class="yu-cells">
+  <view class="yu-cell" wx:for="{{[1,1]}}" wx:key="index">
+    <view class="yu-cell-bd">单元格标题</view>
+    <view class="yu-cell-ft">说明</view>
+  </view>
+</view>
+
+<view class="yu-title">带图片单元格</view>
+<view class="yu-cells">
+  <view class="yu-cell">
+    <view class="yu-cell-hd">
+      <image class="yu-cell-img" src='/img/ico.png' mode="widthFix"></image>
+    </view>
+    <view class="yu-cell-bd">单元格标题</view>
+  </view>
+  <view class="yu-cell">
+    <view class="yu-cell-hd">
+      <image class="yu-cell-md-img" src='/img/ico.png' mode="widthFix"></image>
+    </view>
+    <view class="yu-cell-bd">单元格标题</view>
+  </view>
+  <view class="yu-cell">
+    <view class="yu-cell-hd">
+      <image class="yu-cell-lg-img" src='/img/ico.png' mode="widthFix"></image>
+    </view>
+    <view class="yu-cell-bd">单元格标题</view>
+  </view>
+</view>
+
+<view class="yu-title">带图标、箭头的单元格</view>
+<view class="yu-cells">
+  <view class="yu-cell" wx:for="{{[1,1]}}" wx:key="index">
+    <view class="yu-cell-hd">
+      <view class="icon-wechat yu-cell-icon"></view>
+    </view>
+    <view class="yu-cell-bd">单元格标题</view>
+    <view class="yu-cell-ft yu-cell-icon"></view>
+  </view>
+</view>
+
+<view class="yu-title">带跳转、图标、箭头、说明的单元格</view>
+<view class="yu-cells">
+  <navigator url="" class="yu-cell" wx:for="{{[1,1]}}" wx:key="index">
+    <view class="yu-cell-hd">
+      <view class="icon-financial_fill yu-cell-icon"></view>
+    </view>
+    <view class="yu-cell-bd">单元格标题</view>
+    <view class="yu-cell-ft yu-cell-icon">说明</view>
+  </navigator>
+</view>

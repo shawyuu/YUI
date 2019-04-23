@@ -1,0 +1,120 @@
+<!--pages/basic/layout/layout.wxml-->
+<view class="yu-tab">
+  <view class="yu-tabbar yu-bg-white">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}" class="yu-tabbar-item {{activeIndex == index ? 'yu-tabbar-item-on' : ''}}" bindtap="tabClick">
+        <view class="yu-tabbar-title">{{item}}</view>
+      </view>
+    </block>
+    <view class="yu-tabbar-slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+  </view>
+  <view class="yu-tabbar-panel">
+    <view class="yu-tabbar-content" hidden="{{activeIndex != 0}}">
+      <view class="yu-title">水平比例布局</view>
+      <view class="yu-bg-white">
+        <view class="yu-flex">
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">等比例</view>
+          </view>
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">等比例</view>
+          </view>
+        </view>
+        <view class="yu-flex">
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">等比例</view>
+          </view>
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">等比例</view>
+          </view>
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">等比例</view>
+          </view>
+        </view>
+        <view class="yu-flex">
+          <view>
+            <view class="yu-btn yu-btn-blue level-out-sm vertical-out-sm">定宽</view>
+          </view>
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">自由比例</view>
+          </view>
+        </view>
+        <view class="yu-flex">
+          <view>
+            <view class="yu-btn yu-btn-blue level-out-sm vertical-out-sm">定宽</view>
+          </view>
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">自由比例</view>
+          </view>
+          <view>
+            <view class="yu-btn yu-btn-blue level-out-sm vertical-out-sm">定宽</view>
+          </view>
+        </view>
+        <view class="yu-flex">
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">1倍</view>
+          </view>
+          <view class="yu-flex-item-double">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">2倍</view>
+          </view>
+        </view>
+        <view class="yu-flex">
+          <view class="yu-flex-item">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">1倍</view>
+          </view>
+          <view class="yu-flex-item-double">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">2倍</view>
+          </view>
+          <view class="yu-flex-item-thrice">
+            <view class="yu-btn yu-btn-blue yu-btn-block level-out-sm vertical-out-sm">3倍</view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <view class="yu-tabbar-content" hidden="{{activeIndex != 1}}">
+      <view class="yu-title">grid布局</view>
+      <view class="yu-grids">
+        <view class="yu-grid">1</view>
+        <view class="yu-grid">2</view>
+        <view class="yu-grid">3</view>
+        <view class="yu-grid">4</view>
+        <view class="yu-grid">5</view>
+        <view class="yu-grid">6</view>
+        <view class="yu-grid">7</view>
+        <view class="yu-grid">8</view>
+        <view class="yu-grid">9</view>
+      </view>
+      <view class="yu-title">类float的grid布局</view>
+      <view class="yu-grids-float">
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">1</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">2</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">3</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">4</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">5</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">6</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">7</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">8</view>
+        <view class="yu-grid yu-grid-col-3 yu-grid-border">9</view>
+      </view>
+      <view class="yu-title">类flex的grid布局</view>
+      <view class="yu-grids-flex">
+        <view class="yu-grid yu-grid-col-4">1</view>
+        <view class="yu-grid yu-grid-col-4">2</view>
+        <view class="yu-grid yu-grid-col-4">3</view>
+        <view class="yu-grid yu-grid-col-4">4</view>
+        <view class="yu-grid yu-grid-col-4">5</view>
+        <view class="yu-grid yu-grid-col-4">6</view>
+        <view class="yu-grid yu-grid-col-4">7</view>
+        <view class="yu-grid yu-grid-col-4">8</view>
+      </view>
+    </view>
+    <view class="yu-tabbar-content" hidden="{{activeIndex != 2}}">
+      <view class="yu-title">浮动布局</view>
+      <view class="yu-float yu-bg-white level-in vertical-in-sm">
+        <view class="yu-float-fl">浮动靠左</view>
+        <view class="yu-float-fr">浮动靠右</view>
+      </view>
+    </view>
+  </view>
+</view>

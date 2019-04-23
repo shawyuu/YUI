@@ -1,0 +1,26 @@
+<view class="yu-title">文本颜色</view>
+<view class='yu-bg-white vertical-in '>
+  <view class="yu-text-blue level-out vertical-in-sm yu-inblock">蓝色</view>
+  <view class="yu-text-sky level-out vertical-in-sm yu-inblock">天蓝</view>
+  <view class="yu-text-green level-out vertical-in-sm yu-inblock">绿色</view>
+  <view class="yu-text-olive level-out vertical-in-sm yu-inblock">橄绿</view>
+  <view class="yu-text-red level-out vertical-in-sm yu-inblock">红色</view>
+  <view class="yu-text-pink level-out vertical-in-sm yu-inblock">粉色</view>
+  <view class="yu-text-purple level-out vertical-in-sm yu-inblock">紫色</view>
+  <view class="yu-text-yellow level-out vertical-in-sm yu-inblock">黄色</view>
+  <view class="yu-text-orange level-out vertical-in-sm yu-inblock">橙色</view>
+  <view class="yu-text-grey level-out vertical-in-sm yu-inblock">灰色</view>
+  <view class="yu-text-white level-out vertical-in-sm yu-inblock">白色</view>
+</view>
+<view class="yu-title">文字截断</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class='yu-ellipsis vertical-out yu-text-blue' style='width:80%;'>人生总有不期而遇的温暖，和生生不息的希望。</view>
+  <view class='yu-ellipsis-two vertical-out yu-text-green' style='width:80%;'>后来终于明白，生活中的你为什么不招人待见了，因为不够虚伪，因为嘴不甜，不会拍马屁， 不会睁着眼睛说瞎话。</view>
+  <view class='yu-ellipsis-three vertical-out' style='width:60%;'>后来终于明白，生活中的你为什么不招人待见了，因为不够虚伪，因为嘴不甜，不会拍马屁， 不会睁着眼睛说瞎话。</view>
+</view>
+<view class="yu-title">文字对齐</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class='yu-inline-left vertical-out yu-text-blue'>且听风吟，静待花开</view>
+  <view class='yu-inline-center vertical-out yu-text-blue'>且听风吟，静待花开</view>
+  <view class='yu-inline-right vertical-out yu-text-blue'>且听风吟，静待花开</view>
+</view>

@@ -1,0 +1,32 @@
+/* pages/basic/color/color.wxss */
+.yu-color{
+  overflow: hidden;
+}
+.yu-color [class*="yu-bg-"] {
+  float:left;
+  margin:16rpx 2%;
+  width:21%;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  color: #fff;
+}
+.yu-color [class*="yu-line-"] {
+  float:left;
+  margin:16rpx 2%;
+  width:21%;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.yu-color [class*="yu-grad-"] {
+  float:left;
+  margin:16rpx 2%;
+  width:46%;
+  height:200rpx;
+  line-height:200rpx;
+  text-align: center;
+  box-sizing: border-box;
+}

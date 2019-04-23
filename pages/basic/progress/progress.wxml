@@ -1,0 +1,39 @@
+<view class="yu-title">进度条形状与颜色</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class="yu-progress vertical-out-sm">
+    <view class='yu-progress-item yu-bg-blue' style="width:20%;">20%</view>
+  </view>
+  <view class="yu-progress vertical-out-sm yu-radius-sm">
+    <view class='yu-progress-item yu-bg-sky' style="width:50%;">50%</view>
+  </view>
+  <view class="yu-progress vertical-out-sm yu-radius-lg">
+    <view class='yu-progress-item yu-bg-green' style="width:80%;">80%</view>
+  </view>
+</view>
+<view class="yu-title">进度条尺寸</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class="yu-progress yu-progress-size-mini vertical-out-sm yu-round">
+    <view class='yu-progress-item yu-bg-orange' style="width:60%;"></view>
+  </view>
+  <view class="yu-progress yu-progress-size-sm vertical-out-sm yu-round">
+    <view class='yu-progress-item yu-bg-orange' style="width:60%;"></view>
+  </view>
+  <view class="yu-progress vertical-out-sm yu-round">
+    <view class='yu-progress-item yu-bg-orange' style="width:60%;"></view>
+  </view>
+  <view class="yu-progress yu-progress-size-md vertical-out-sm yu-round">
+    <view class='yu-progress-item yu-bg-orange' style="width:60%;"></view>
+  </view>
+  <view class="yu-progress yu-progress-size-lg vertical-out-sm yu-round">
+    <view class='yu-progress-item yu-bg-orange' style="width:60%;"></view>
+    <view class='yu-progress-item yu-bg-sky' style="width:20%;"></view>
+  </view>
+</view>
+<view class="yu-title">进度条比例</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class="yu-progress yu-progress-size-lg vertical-out-sm yu-round">
+    <view class='yu-progress-item yu-bg-blue' style="width:30%;">30%</view>
+    <view class='yu-progress-item yu-bg-sky' style="width:25%;">25%</view>
+    <view class='yu-progress-item yu-bg-green' style="width:45%;">45%</view>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<scroll-view class="yu-table-box" scroll-x="true">
+  <view class="yu-table">
+    <view class="yu-table-tr">
+      <view class="yu-table-fixed">
+        <view class="yu-table-th">{{themeArr.nickName}}</view>
+        <view class="yu-table-td yu-inline-center" wx:for="{{itemArr}}" wx:key="{{index}}">{{item.nickName}}</view>
+      </view>
+    </view>
+    <view class="yu-table-tr"  style="width:100rpx;">
+      <view class="yu-table-th">{{themeArr.age}}</view>
+      <view class="yu-table-td yu-inline-center" wx:for="{{itemArr}}" wx:key="{{index}}">{{item.age}}</view>
+    </view>
+    <view class="yu-table-tr"  style="width:240rpx;">
+      <view class="yu-table-th">{{themeArr.tell}}</view>
+      <view class="yu-table-td yu-inline-center" wx:for="{{itemArr}}" wx:key="{{index}}">{{item.tell}}</view>
+    </view>
+    <view class="yu-table-tr" style="width:400rpx;">
+      <view class="yu-table-th">{{themeArr.address}}</view>
+      <view class="yu-table-td " wx:for="{{itemArr}}" wx:key="{{index}}">{{item.address}}</view>
+    </view>
+    <view class="yu-table-tr">
+      <view class="yu-table-th">{{themeArr.qq}}</view>
+      <view class="yu-table-td yu-inline-center" wx:for="{{itemArr}}" wx:key="{{index}}">{{item.qq}}</view>
+    </view>
+    <view class="yu-table-tr"  style="width:300rpx;">
+      <view class="yu-table-th">{{themeArr.msg}}</view>
+      <view class="yu-table-td" wx:for="{{itemArr}}" wx:key="{{index}}">{{item.msg}}</view>
+    </view>
+  </view>
+</scroll-view>
+
+
+

@@ -1,0 +1,36 @@
+<view class="yu-timeline">
+  <view class="yu-time">12:32</view>
+  <view class='yu-item icon-collection_fill'>
+    <view class="yu-timeline-content">
+      <text>我想亲手编织一场梦境：那里，海棠如火，荼靡归期，大鱼沉睡，有你。</text>
+    </view>
+  </view>
+  <view class='yu-item icon-collection_fill'>
+    <view class="yu-timeline-content">
+      <text>我想亲手编织一场梦境：那里，海棠如火，荼靡归期，大鱼沉睡，有你。</text>
+    </view>
+  </view>
+  <view class='yu-item yu-text-blue icon-collection_fill'>
+    <view class="yu-timeline-content yu-bg-blue yu-text-white">
+      <text>我想亲手编织一场梦境：那里，海棠如火，荼靡归期，大鱼沉睡，有你。</text>
+    </view>
+  </view>
+  <view class='yu-item yu-text-sky icon-collection_fill'>
+    <view class="yu-timeline-content yu-bg-sky yu-text-white">
+      <text>我想亲手编织一场梦境：那里，海棠如火，荼靡归期，大鱼沉睡，有你。</text>
+    </view>
+  </view>
+</view>
+<view class="yu-timeline">
+  <view class="yu-time">12:32</view>
+  <view class='yu-item yu-text-blue icon-collection_fill'>
+    <view class="yu-timeline-content yu-bg-blue yu-text-white">
+      <text>我想亲手编织一场梦境：那里，海棠如火，荼靡归期，大鱼沉睡，有你。</text>
+    </view>
+  </view>
+  <view class='yu-item yu-text-sky icon-collection_fill'>
+    <view class="yu-timeline-content yu-bg-sky yu-text-white">
+      <text>我想亲手编织一场梦境：那里，海棠如火，荼靡归期，大鱼沉睡，有你。</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,182 @@
+<view class="yu-title">带边距卡片</view>
+<view class="yu-card yu-card-out">
+  <view class="yu-card-img">
+    <image src="/img/img3.jpg" mode="widthFix"></image>
+  </view>
+  <view class="yu-card-content">
+    <view>
+      <view class="yu-card-text">我总以为18岁之后是19岁，19岁之后是18岁，20岁永远不会到来</view>
+      <view class="yu-flex">
+        <view class="yu-card-header">
+          <image src="/img/ico.png" mode="widthFix"></image>
+        </view>
+        <view class="yu-flex-item">
+          <view class="yu-flex">
+            <view class="yu-flex-item">
+              <view class="yu-card-nickname">SHAW</view>
+            </view>
+          </view>
+          <view class="yu-flex">
+            <view class="yu-flex-item">
+              <view class="yu-card-info">1分钟前</view>
+            </view>
+            <view class="yu-card-operate">
+              <text class="item icon-like_fill">48</text>
+              <text class="item icon-praise_fill">58</text>
+              <text class="item icon-message_fill">84</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="yu-title">无边距卡片</view>
+<view class="yu-card">
+  <view class="yu-card-img">
+    <image src="/img/img3.jpg" mode="widthFix"></image>
+  </view>
+  <view class="yu-card-content">
+    <view>
+      <view class="yu-card-text">我总以为18岁之后是19岁，19岁之后是18岁，20岁永远不会到来</view>
+      <view class="yu-flex">
+        <view class="yu-card-header">
+          <image src="/img/ico.png" mode="widthFix"></image>
+        </view>
+        <view class="yu-flex-item">
+          <view class="yu-flex">
+            <view class="yu-flex-item">
+              <view class="yu-card-nickname">SHAW</view>
+            </view>
+          </view>
+          <view class="yu-flex">
+            <view class="yu-flex-item">
+              <view class="yu-card-info">1分钟前</view>
+            </view>
+            <view class="yu-card-operate">
+              <text class="item icon-like_fill">4858</text>
+              <text class="item icon-praise_fill">585</text>
+              <text class="item icon-message_fill">844</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="yu-title">动态卡片</view>
+<view class="yu-card yu-card-dynamic-out">
+  <view class="yu-card-content">
+    <view class="yu-flex">
+      <view class="yu-card-header">
+        <image src="/img/ico.png" mode="widthFix"></image>
+      </view>
+      <view class="yu-flex-item">
+        <view class="yu-card-nickname">SHAW</view>
+        <view class="yu-card-info">1分钟前</view>
+      </view>
+    </view>
+    <view class="yu-card-text">我总以为18岁之后是19岁，19岁之后是18岁，20岁永远不会到来</view>
+  </view>
+  <view class="yu-card-img">
+    <image src="/img/img3.jpg" mode="widthFix"></image>
+  </view>
+  <view class="yu-card-content">
+    <view class="yu-padding-top">
+      <view class="yu-flex">
+        <view class="yu-card-delete">
+          删除
+        </view>
+        <view class="yu-flex-item">
+          <view class="yu-card-operate">
+            <text class="item icon-like_fill">4858</text>
+            <text class="item icon-praise_fill">585</text>
+            <text class="item icon-message_fill">844</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="yu-title">无边距动态卡片</view>
+<view class="yu-card">
+  <view class="yu-card-content">
+    <view class="yu-flex">
+      <view class="yu-card-header">
+        <image src="/img/ico.png" mode="widthFix"></image>
+      </view>
+      <view class="yu-flex-item">
+        <view class="yu-card-nickname">SHAW</view>
+        <view class="yu-card-info">1分钟前</view>
+      </view>
+    </view>
+    <view class="yu-card-text">我总以为18岁之后是19岁，19岁之后是18岁，20岁永远不会到来</view>
+  </view>
+  <view class="yu-card-img">
+    <image src="/img/img3.jpg" mode="widthFix"></image>
+  </view>
+  <view class="yu-card-content">
+    <view class="yu-padding-top">
+      <view class="yu-flex">
+        <view class="yu-card-delete">
+          删除
+        </view>
+        <view class="yu-flex-item">
+          <view class="yu-card-operate">
+            <text class="item icon-like_fill">4858</text>
+            <text class="item icon-praise_fill">585</text>
+            <text class="item icon-message_fill">844</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="yu-title">商品类卡片</view>
+<view class="yu-card-goods">
+  <view class="yu-grids-flex">
+    <view class="yu-grid yu-grid-col-2" wx:for="{{5}}" wx:key="index">
+      <view class="yu-card">
+        <view class="yu-card-img">
+          <image src="/img/img3.jpg" mode="widthFix"></image>
+        </view>
+        <view class="yu-card-content">
+          <view>
+            <view class="yu-card-text yu-ellipsis">这里应该是很长的商品类的名称</view>
+            <view class="yu-flex">
+              <view class="yu-flex-item">
+                <view class="yu-card-price">￥88.00</view>
+              </view>
+              <view class="yu-card-operate">
+                <text class="item icon-like_fill">520喜欢</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="yu-title">商品类列表</view>
+<view class="yu-card-goods-list" wx:for="{{3}}" wx:key="index">
+  <view class="yu-card">
+    <view class="yu-flex">
+      <view>
+        <view class="yu-card-img">
+          <image src="/img/img3.jpg" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="yu-flex-item">
+        <view class="yu-card-text yu-ellipsis-two">我总以为18岁之后是19岁，19岁之后是18岁，20岁永远不会到来</view>
+        <view class="yu-flex">
+          <view class="yu-flex-item">
+            <view class="yu-card-price">￥88.00</view>
+          </view>
+          <view class="yu-card-operate">
+            <text class="item icon-like_fill">4858</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

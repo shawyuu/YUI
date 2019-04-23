@@ -1,0 +1,47 @@
+<view class="login">
+  <view class="yu-form-group">
+    <view class="yu-form">
+      <view class="yu-form-hd">
+        <view class="yu-label">昵称</view>
+      </view>
+      <view class="yu-form-bd">
+        <input class="yu-input" placeholder="请输入昵称" />
+      </view>
+    </view>
+    <view class="yu-form">
+      <view class="yu-form-hd">
+        <view class="yu-label">手机号</view>
+      </view>
+      <view class="yu-form-bd">
+        <input class="yu-input" placeholder="请输入手机号" />
+      </view>
+    </view>
+    <view class="yu-form">
+      <view class="yu-form-hd">
+        <view class="yu-label">验证码</view>
+      </view>
+      <view class="yu-form-bd">
+        <input class="yu-input" placeholder="手机验证码" />
+      </view>
+      <view class="yu-form-ft">
+        <view class="yu-vcode-btn">
+          <button class="yu-btn yu-btn-sm yu-btn-line-blue">获取验证码</button>
+        </view>
+      </view>
+    </view>
+    <view class="yu-form">
+      <view class="yu-form-hd">
+        <view class="yu-label">验证码</view>
+      </view>
+      <view class="yu-form-bd">
+        <input class="yu-input" placeholder="图片验证码" />
+      </view>
+      <view class="yu-form-ft">
+        <image src="/img/code.png" class="yu-vcode-img"></image>
+      </view>
+    </view>
+    <view class="level-in vertical-in yu-bg-white">
+      <button class="yu-btn yu-btn-blue yu-btn-block">登录</button>
+    </view>
+  </view>
+</view>

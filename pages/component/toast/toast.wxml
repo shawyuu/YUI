@@ -1,0 +1,23 @@
+<view class="yu-title">toast</view>
+<view class="level-in vertical-in-sm">
+  <button class="yu-btn yu-btn-default yu-btn-block" catchtap='showToast'>成功提示</button>
+</view>
+<view class="level-in vertical-in-sm">
+  <button class="yu-btn yu-btn-default yu-btn-block" catchtap='showToast1'>取消提示</button>
+</view>
+<view class="level-in vertical-in-sm">
+  <button class="yu-btn yu-btn-default yu-btn-block" catchtap='showToast2'>禁止提示</button>
+</view>
+<view class="level-in vertical-in-sm">
+  <button class="yu-btn yu-btn-default yu-btn-block" catchtap='showToast3'>文本提示</button>
+</view>
+
+<view class="yu-toast" hidden='{{toastHidden}}'>
+  <view class='yu-toast-mask'/>
+  <view class='yu-toast-box'>
+    <view class='yu-toast-content'>
+      <view class='{{icon}}' hidden='{{iconHidden}}'></view>
+      <text>{{tip}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class="yu-title">树形列表</view>
+<view class="yu-trees">
+  <view class="yu-tree">
+    <view class="yu-tree-item" wx:for="{{trees}}" wx:key wx:for-index="idx1" wx:for-item="item1" data-node='{{idx1}}' catchtap="bindTreeOne">
+      <view class="yu-tree-header">
+        <view class="yu-tree-title">{{item1.title}}</view>
+        <view class="yu-tree-mark">12:00</view>
+      </view>
+      <view hidden="{{idx1 != current[0]}}">
+        <view class="yu-tree-item" wx:for="{{item1.tree}}" wx:key wx:for-index="idx2" wx:for-item="item2" data-node='{{idx2}}' catchtap="bindTreeTwo">
+          <view class="yu-tree-header">
+            <view class="yu-tree-title">
+              <i class="icon-play"></i>{{item2.title}}</view>
+            <view class="yu-tree-mark">7:43</view>
+          </view>
+          <view hidden="{{idx2 != current[1]}}">
+            <view class="yu-tree-item" wx:for="{{item2.tree}}" wx:key wx:for-index="idx3" wx:for-item="item3" data-localnode1='{{idx1}}' data-localnode2='{{idx2}}' data-node='{{idx3}}' catchtap="bindChange">
+              <view class="yu-tree-header {{(idx1 === local[0] && idx2 === local[1] && idx3 === current[2]) ? 'yu-text-blue':''}}">
+                <view class="yu-tree-title">{{item3.title}}</view>
+                <view class="yu-tree-mark">2:12</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

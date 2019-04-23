@@ -1,0 +1,12 @@
+<view class="yu-title">全屏轮播</view>
+<swiper class="yu-swiper" indicator-dots circular autoplay interval="5000" duration="500">
+  <swiper-item wx:for="{{4}}" wx:key>
+    <image  class='yu-swiper-img' src="/img/img3.jpg" mode='widthFix'></image>
+  </swiper-item>
+</swiper>  
+<view class="yu-title">卡片式</view>                                                                                          
+<swiper class="yu-swiper-card" indicator-dots circular autoplay interval="5000" duration="500" bindchange="cardSwiper" style='height:480rpx;'>
+  <swiper-item wx:for="{{3}}" wx:key class="{{current==index?'current':''}}">
+    <image class='yu-swiper-img' src="/img/img3.jpg"></image>
+  </swiper-item>
+</swiper>

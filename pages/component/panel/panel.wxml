@@ -1,0 +1,68 @@
+<view class="yu-panel">
+  <view class="yu-panel-hd">
+    <view class="yu-panel-hd-title">图文组合列表</view>
+    <navigator class="yu-panel-hd-more">更多</navigator>
+  </view>
+  <view class="yu-panel-bd">
+    <navigator url="" class="yu-media">
+      <view class="yu-media-hd yu-media-img-square">
+        <image class="yu-media-thumb" src="/img/ico.png" mode="widthFix" />
+      </view>
+      <view class="yu-media-bd">
+        <view class="yu-media-title">标题栏</view>
+        <view class="yu-media-desc">这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍</view>
+      </view>
+    </navigator>
+    <navigator url="" class="yu-media">
+      <view class="yu-media-hd yu-media-img-round">
+        <image class="yu-media-thumb" src="/img/ico.png" mode="widthFix" />
+      </view>
+      <view class="yu-media-bd">
+        <view class="yu-media-title">标题栏</view>
+        <view class="yu-media-desc">这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="yu-panel">
+  <view class="yu-panel-hd">矩形图文组合列表</view>
+  <navigator url="" class="yu-media" wx:for="{{[1,1,1]}}" wx:key="index">
+    <view class="yu-media-hd yu-media-img-rectangle">
+      <image class="yu-media-thumb" src="/img/img3.jpg" mode="widthFix" />
+    </view>
+    <view class="yu-media-bd">
+      <view class="yu-media-title">标题栏</view>
+      <view class="yu-media-desc">这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍</view>
+    </view>
+  </navigator>
+</view>
+<view class="yu-panel">
+  <view class="yu-panel-hd">纯文本组合列表</view>
+  <navigator url="" class="yu-media">
+    <view class="yu-media-hd yu-media-text-box">
+      <view class="yu-bg-green yu-media-text">张</view>
+    </view>
+    <view class="yu-media-bd">
+      <view class="yu-media-title">标题栏</view>
+      <view class="yu-media-desc">这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍</view>
+    </view>
+  </navigator>
+  <navigator url="" class="yu-media">
+    <view class="yu-media-hd yu-media-text-box">
+      <view class="yu-bg-blue yu-media-text">李</view>
+    </view>
+    <view class="yu-media-bd">
+      <view class="yu-media-title">标题栏</view>
+      <view class="yu-media-desc">这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍</view>
+    </view>
+  </navigator>
+  <navigator url="" class="yu-media">
+    <view class="yu-media-hd yu-media-text-box">
+      <view class="yu-bg-sky yu-media-text">A</view>
+    </view>
+    <view class="yu-media-bd">
+      <view class="yu-media-title">标题栏</view>
+      <view class="yu-media-desc">这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍</view>
+    </view>
+  </navigator>
+</view>

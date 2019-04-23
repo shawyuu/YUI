@@ -1,0 +1,36 @@
+<view class="yu-title">标签形状</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class="yu-tag">默认</view>
+  <view class="yu-tag yu-round">胶囊</view>
+  <view class="yu-tag yu-radius">圆角</view>
+</view>
+<view class="yu-title">标签尺寸</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class="yu-tag yu-tag-sm">小尺寸</view>
+  <view class="yu-tag">默认</view>
+  <view class="yu-tag yu-tag-lg">大尺寸</view>
+</view>
+<view class="yu-title">标签颜色</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-blue">蓝色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-sky">天蓝</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-green">绿色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-olive">橄绿</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-red">红色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-pink">粉色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-purple">紫色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-orange">橙色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-bg-yellow">黄色</view></view>
+</view>
+<view class="yu-title">镂空标签</view>
+<view class='yu-bg-white level-in vertical-in'>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-blue yu-text-blue">蓝色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-sky yu-text-sky">天蓝</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-green yu-text-green">绿色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-olive yu-text-olive">橄绿</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-red yu-text-red">红色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-pink yu-text-pink">粉色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-purple yu-text-purple">紫色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-orange yu-text-orange">橙色</view></view>
+  <view class="level-in-sm vertical-in-mini"><view class="yu-tag yu-radius yu-line-yellow yu-text-yellow">黄色</view></view>
+</view>

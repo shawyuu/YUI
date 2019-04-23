@@ -1,0 +1,24 @@
+<view class="yu-title">dialog</view>
+<view class="level-in vertical-in-sm">
+  <button class="yu-btn yu-btn-default yu-btn-block" catchtap='showDialog'>dialog样式一</button>
+</view>
+<view class="level-in vertical-in-sm">
+  <button class="yu-btn yu-btn-default yu-btn-block" catchtap='showDialog2'>dialog样式二</button>
+</view>
+<view class="level-in vertical-in-sm">
+  <button class="yu-btn yu-btn-default yu-btn-block" catchtap='showDialog3'>dialog样式三</button>
+</view>
+
+<view class="yu-dialog" hidden='{{dialogHidden}}'>
+  <view class='yu-dialog-mask' catchtap='cancelHandle' />
+  <view class='yu-dialog-box'>
+    <view class="yu-dialog-title" hidden="{{titleHidden}}">{{title}}</view>
+    <view class='yu-dialog-content'>
+      <text>{{msg}}</text>
+    </view>
+    <view class='yu-dialog-handle'>
+      <view catchtap='cancelHandle' class='cancel' hidden="{{cancelHidden}}">{{ cancelText }}</view>
+      <view catchtap='comfirmHandle' class='comfirm yu-text-blue'>{{ confirmText }}</view>
+    </view>
+  </view>
+</view>

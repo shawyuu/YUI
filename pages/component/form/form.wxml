@@ -1,0 +1,147 @@
+<view class="yu-title">基本表单</view>
+<view class="yu-form-group">
+  <view class="yu-form">
+    <view class="yu-form-hd">
+      <view class="yu-label">信息标题</view>
+    </view>
+    <view class="yu-form-bd">
+      <input class="yu-input" placeholder="请输入信息" />
+    </view>
+  </view>
+  <view class="yu-form">
+    <view class="yu-form-hd">
+      <view class="yu-label">信息标题</view>
+    </view>
+    <view class="yu-form-bd">
+      <input class="yu-input" placeholder="请输入信息" />
+    </view>
+    <view class="yu-form-ft">
+      <icon type="warn" size="20" color="#ff564a" />
+    </view>
+  </view>
+  <view class="yu-form">
+    <view class="yu-form-hd">
+      <view class="yu-label">手机号</view>
+    </view>
+    <view class="yu-form-bd">
+      <input class="yu-input" placeholder="请输入手机号" />
+    </view>
+    <view class="yu-form-ft">
+      <view class="yu-vcode-btn">
+        <button class="yu-btn yu-btn-blue">获取验证码</button>
+      </view>
+    </view>
+  </view>
+  <view class="yu-form">
+    <view class="yu-form-hd">
+      <view class="yu-label">验证码</view>
+    </view>
+    <view class="yu-form-bd">
+      <input class="yu-input" placeholder="请输入验证码" />
+    </view>
+    <view class="yu-form-ft">
+      <image src="/img/code.png" class="yu-vcode-img"></image>
+    </view>
+  </view>
+  <view class="yu-form">
+    <view class="yu-form-bd">
+      <input class="yu-input" placeholder="请输入文本" />
+    </view>
+  </view>
+</view>
+<view class="yu-title">单选列表项</view>
+<view class="yu-form-group">
+  <radio-group bindchange="radioChange">
+    <label class="yu-form" wx:for="{{radios}}" wx:key="value">
+      <view class="yu-form-hd">
+        <radio class="yu-check" value="{{item.value}}" checked="{{item.checked}}" />
+        <icon class="yu-check-icon" type="success" size="22" color='#3565ee' wx:if="{{item.checked}}"></icon>
+        <icon class="yu-check-icon" type="circle" size="22" color='#999' wx:else></icon>
+      </view>
+      <view class="yu-form-bd">
+        <view class="yu-form-title">{{item.name}}</view>
+      </view>
+    </label>
+  </radio-group>
+  <radio-group bindchange="radioChange">
+    <label class="yu-form" wx:for="{{radios}}" wx:key="value">
+      <view class="yu-form-bd">
+        <view class="yu-form-title">{{item.name}}</view>
+      </view>
+      <view class="yu-form-ft">
+        <radio class="yu-check" value="{{item.value}}" checked="{{item.checked}}" />
+        <icon class="yu-check-icon" type="success" size="22" color='#3565ee' wx:if="{{item.checked}}"></icon>
+        <icon class="yu-check-icon" type="circle" size="22" color='#999' wx:else></icon>
+      </view>
+    </label>
+  </radio-group>
+</view>
+<view class="yu-title">多选列表项</view>
+<view class="yu-form-group">
+  <checkbox-group bindchange="checkboxChange">
+    <label class="yu-form" wx:for="{{checkboxs}}" wx:key="value">
+
+      <view class="yu-form-hd">
+        <checkbox class="yu-check" value="{{item.value}}" checked="{{item.checked}}" />
+        <icon class="yu-check-icon" type="success" size="22" color='#3565ee' wx:if="{{item.checked}}"></icon>
+        <icon class="yu-check-icon" type="circle" size="22" color='#999' wx:else></icon>
+      </view>
+      <view class="yu-form-bd">
+        <view class="yu-form-title">{{item.name}}</view>
+      </view>
+    </label>
+  </checkbox-group>
+</view>
+<view class="yu-title">开关</view>
+<view class="yu-form-group">
+  <view class="yu-form">
+    <view class="yu-form-bd">
+      <view class="yu-label">标题</view>
+    </view>
+    <view class="yu-form-ft">
+      <switch class="yu-switch" checked color="#3565ee" bindchange="switchChange" />
+    </view>
+  </view>
+  <view class="yu-form">
+    <view class="yu-form-bd">
+      <view class="yu-label">标题</view>
+    </view>
+    <view class="yu-form-ft">
+      <switch class="yu-switch" bindchange="switchChange" />
+    </view>
+  </view>
+</view>
+<view class="yu-title">文本域</view>
+<view class="yu-form-group">
+  <view class="yu-form">
+    <view class="yu-form-bd">
+      <textarea class="yu-textarea" placeholder="请输入文本" />
+      <view class="yu-textarea-counter">0/200</view>
+    </view>
+  </view>
+</view>
+<view class="yu-title">picker选择器</view>
+<view class="yu-form-group">
+  <view class="yu-form">
+    <view class="yu-form-hd">
+      <view class="yu-label">时间</view>
+    </view>
+    <view class="yu-form-bd">
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view class="yu-input yu-inline-right">{{time}}</view>
+      </picker>
+    </view>
+    <view class="yu-form-ft yu-form-icon"></view>
+  </view>
+  <view class="yu-form">
+    <view class="yu-form-hd">
+      <view class="yu-label">日期</view>
+    </view>
+    <view class="yu-form-bd">
+      <picker mode="date" value="{{date}}" start="2001-01-01" end="2020-01-01" bindchange="bindDateChange">
+        <view class="yu-input yu-inline-right">{{date}}</view>
+      </picker>
+    </view>
+    <view class="yu-form-ft yu-form-icon"></view>
+  </view>
+</view>

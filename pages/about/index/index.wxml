@@ -1,0 +1,35 @@
+<view class="about">
+  <view class="header yu-bg-blue">
+    <view class="yu-cell">
+      <view class="yu-cell-hd">
+        <image class="yu-cell-lg-img yu-round" src='/img/logo.png' mode="widthFix"></image>
+      </view>
+      <view class="yu-cell-bd yu-text-white">SHAW</view>
+    </view>
+    <image class="header-bg" src="/img/wave.gif" mode="widthFix"></image>
+  </view>
+  <view class="yu-cells">
+    <navigator class="yu-cell"  style="position:relative;">
+      <button open-type="contact" class="service" />
+      <view class="yu-cell-hd">
+        <view class="icon-wechat icon yu-cell-icon  yu-text-green"></view>
+      </view>
+      <view class="yu-cell-bd">微信客服</view>
+      <view class="yu-cell-ft yu-cell-icon"></view>
+    </navigator>
+    <navigator url="/pages/about/update/update" class="yu-cell">
+      <view class="yu-cell-hd">
+        <view class="icon-safety_fill icon yu-cell-icon yu-text-sky"></view>
+      </view>
+      <view class="yu-cell-bd">更新日志</view>
+      <view class="yu-cell-ft yu-cell-icon"></view>
+    </navigator>
+    <navigator url="/pages/about/about/about" class="yu-cell">
+      <view class="yu-cell-hd">
+        <view class="icon-feedback_fill icon yu-cell-icon yu-text-orange"></view>
+      </view>
+      <view class="yu-cell-bd">关于YU组件库</view>
+      <view class="yu-cell-ft yu-cell-icon"></view>
+    </navigator>
+  </view>
+</view>

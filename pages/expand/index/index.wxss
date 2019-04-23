@@ -1,0 +1,19 @@
+/**index.wxss**/
+.yu-grid{
+  background: none;
+  padding:0;
+}
+.yu-grid .nav{
+  margin:10rpx;
+  background: #fff;
+  padding:30rpx 0;
+}
+.index-icon {
+  font-size: 50rpx;
+  color: #999;
+}
+
+.index-text {
+  font-size: 28rpx;
+  color: #666;
+}

@@ -1,0 +1,19 @@
+/* pages/basic/icon/icon.wxss */
+
+.yu-grid {
+  padding: 30rpx 0;
+}
+
+.yu-grid .icon {
+  font-size:56rpx;
+  color: #888;
+}
+
+.yu-grid text {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
