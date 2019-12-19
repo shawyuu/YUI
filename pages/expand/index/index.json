@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "首页"
+  "navigationBarTitleText": "拓展",
+  "usingComponents": {
+    "yu-cell": "/components/cell/cell",
+    "yu-dialog": "/components/dialog/dialog"
+  }
 }

@@ -2,3 +2,6 @@
 page{
   background: #fff;
 }
+.about{
+  padding:10px 15px;
+}

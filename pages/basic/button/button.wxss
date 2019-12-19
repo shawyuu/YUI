@@ -1,4 +1,0 @@
-/* pages/basic/button/button.wxss */
-.btn-container .yu-btn{
-  margin:20rpx;
-}

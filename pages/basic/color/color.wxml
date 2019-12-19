@@ -1,22 +1,5 @@
-<view class="yu-title">文本颜色</view>
-<view class='yu-bg-white level-in vertical-in'>
-  <view class="yu-text-blue level-out vertical-in-sm yu-inblock">蓝色</view>
-  <view class="yu-text-sky level-out vertical-in-sm yu-inblock">天蓝</view>
-  <view class="yu-text-green level-out vertical-in-sm yu-inblock">绿色</view>
-  <view class="yu-text-olive level-out vertical-in-sm yu-inblock">橄绿</view>
-  <view class="yu-text-purple level-out vertical-in-sm yu-inblock">紫色</view>
-  <view class="yu-text-red level-out vertical-in-sm yu-inblock">红色</view>
-  <view class="yu-text-pink level-out vertical-in-sm yu-inblock">粉色</view>
-  <view class="yu-text-yellow level-out vertical-in-sm yu-inblock">黄色</view>
-  <view class="yu-text-orange level-out vertical-in-sm yu-inblock">橙色</view>
-  <view class="yu-text-black level-out vertical-in-sm yu-inblock">黑色</view>
-  <view class="yu-text-grey-dark level-out vertical-in-sm yu-inblock">深灰</view>
-  <view class="yu-text-grey level-out vertical-in-sm yu-inblock">灰色</view>
-  <view class="yu-text-grey-light level-out vertical-in-sm yu-inblock">浅灰</view>
-  <view class="yu-text-white level-out vertical-in-sm yu-inblock">白色</view>
-</view>
-<view class="yu-title">背景颜色</view>
-<view class='yu-bg-white level-in vertical-in yu-color'>
+<yu-title title="背景颜色" titleSize="14"></yu-title>
+<view class='yu-bg-white yu-color'>
   <view class="yu-radius yu-bg-blue">蓝色</view>
   <view class="yu-radius yu-bg-sky">天蓝</view>
   <view class="yu-radius yu-bg-green">绿色</view>
@@ -30,15 +13,15 @@
   <view class="yu-radius yu-bg-grey">灰色</view>
   <view class="yu-radius yu-bg-grey-light">浅灰色</view>
 </view>
-<view class="yu-title">渐变背景</view>
-<view class='yu-bg-white level-in vertical-in yu-color'>
+<yu-title title="渐变背景" titleSize="14"></yu-title>
+<view class='yu-bg-white yu-color'>
   <view class="yu-radius yu-grad-red">红色</view>
   <view class="yu-radius yu-grad-yellow">黄色</view>
   <view class="yu-radius yu-grad-blue">蓝色</view>
   <view class="yu-radius yu-grad-cyan">青色</view>
 </view>
-<view class="yu-title">边框颜色</view>
-<view class='yu-bg-white level-in vertical-in yu-color'>
+<yu-title title="边框颜色" titleSize="14"></yu-title>
+<view class='yu-bg-white yu-color'>
   <view class="yu-tag yu-radius yu-line-blue yu-text-blue">蓝色</view>
   <view class="yu-tag yu-radius yu-line-sky yu-text-sky">天蓝</view>
   <view class="yu-tag yu-radius yu-line-green yu-text-green">绿色</view>

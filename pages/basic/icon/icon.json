@@ -1,3 +1,9 @@
 {
+  "usingComponents": {
+    "yu-title": "/components/title/title",
+    "yu-grid": "/components/grid/grid",
+    "yu-icon": "/components/icon/icon"
+  },
   "navigationBarTitleText": "icon"
+  
 }

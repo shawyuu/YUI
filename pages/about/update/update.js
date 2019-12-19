@@ -1,66 +1,30 @@
-// pages/about/update/update.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    timeArr: [
+      {
+        'time': '04/23',
+        'list': [
+          {
+            'icon': 'fire',
+            'text': 'v1.0.0 YU组件库新版本上线',
+            'color': '#10aeff'
+          }
+        ]
+      },
+      {
+        'time': '11/30',
+        'list': [
+          {
+            'icon': 'like_fill',
+            'text': 'v1.1.0 YU组件库更新，组件可独立使用，不依赖样式库',
+            'color': '#10aeff'
+          }
+        ]
+      }
+      
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
   }
 })

@@ -1,1 +1,16 @@
-/* pages/basic/text/text.wxss */
+.yu-text{
+  margin-bottom:10px;
+}
+.yu-text-content{
+  padding:10px 15px;
+}
+
+.yu-text-content>view{
+  margin:10px 0;
+}
+
+.yu-text-content-color>view{
+  height:36px;
+  line-height:36px;
+  margin:0 6px;
+}

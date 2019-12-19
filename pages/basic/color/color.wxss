@@ -1,6 +1,8 @@
 /* pages/basic/color/color.wxss */
 .yu-color{
   overflow: hidden;
+  padding:10px;
+  margin-bottom:10px;
 }
 .yu-color [class*="yu-bg-"] {
   float:left;

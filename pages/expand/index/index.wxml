@@ -1,9 +1,2 @@
-<view class="yu-title">拓展</view>
-<view class="yu-grids-float">
-  <view class="yu-grid yu-grid-col-2" wx:for="{{ expands}}" wx:key="index">
-    <navigator url="{{item.url}}" class="nav yu-radius">
-      <view class="{{item.icon}} index-icon"></view>
-      <text class="index-text">{{item.name}}</text>
-    </navigator>
-  </view>
-</view>
+<yu-cell title="索引indexlist" showArrow url="/pages/expand/indexlist/indexlist"></yu-cell>
+<yu-cell title="页脚footer" showArrow url="/pages/expand/footer/footer"></yu-cell>

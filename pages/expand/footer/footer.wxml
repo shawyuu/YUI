@@ -1,29 +1,5 @@
-<view class="yu-title">数据可加载文字样式</view>
-<view class="yu-footer yu-bg-white">
-  <view class="yu-footer-btn">点击加载更多...</view>
-</view>
-<view class="yu-title">数据可加载按钮样式</view>
-<view class="yu-footer yu-bg-white vertical-in">
-  <view class="yu-footer-btn-border">点击加载更多...</view>
-</view>
-<view class="yu-title">数据加载完成</view>
-<view class="yu-footer yu-bg-white">
-  <view class="yu-footer-text">—— 我是有底线的 ——</view>
-</view>
-<view class="yu-footer yu-bg-white">
-  <view class="yu-footer-text">—— 没有更多了 ——</view>
-</view>
-<view class="yu-title">底部链接</view>
-<view class="yu-footer yu-bg-white">
-  <view class="yu-footer-link">底部链接</view>
-</view>
-<view class="yu-title">底部</view>
-<view class="yu-footer yu-bg-white">
-  <view class="yu-footer-text">Copyright © 2019</view>
-</view>
-<view class="yu-title">底部固定</view>
-<view class="yu-footer">
-  <view class="yu-footer-fixd">
-    <view class="yu-footer-text">Copyright © 2019</view>
-  </view>
-</view>
+<yu-footer text="—— 我是有背景颜色的 ——" bgColor="#fff"></yu-footer>
+<yu-footer text="—— 我是有文字颜色和尺寸的 ——" color="#333" size="12"></yu-footer>
+<yu-footer text="—— 我是有链接的 ——" color="#586c94" url="/pages/expand/footer/footer"></yu-footer>
+<yu-footer text="—— 我是有点击事件的 ——" color="#3565ee" bindclick="clickFooter"></yu-footer>
+<yu-footer text="—— 内容不够时，我是固定的 ——" isFix></yu-footer>

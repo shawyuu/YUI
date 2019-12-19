@@ -1,2 +1,5 @@
-# YUI
-Wechat widget UI component library
+## YUI
+
+### 简介
+
+小程序通用组件库

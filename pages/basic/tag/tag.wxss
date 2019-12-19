@@ -1,4 +1,0 @@
-/* pages/basic/tag/tag.wxss */
-.vertical-in-mini{
-  display:inline-block;
-}

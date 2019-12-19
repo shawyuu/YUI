@@ -1,3 +1,6 @@
 {
+  "usingComponents": {
+    "yu-title": "/components/title/title"
+  },
   "navigationBarTitleText": "color"
 }

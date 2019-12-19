@@ -7,15 +7,27 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
-		"checkInvalidKey": true
+		"coverView": true,
+		"autoAudits": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.6",
-	"appid": "wx9caa13244a2fe13a",
-	"projectname": "shaw",
+	"libVersion": "2.9.2",
+	"appid": "wxaeb10ddbcc8bfb0a",
+	"projectname": "YUI",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

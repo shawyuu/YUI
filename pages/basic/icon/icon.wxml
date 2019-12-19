@@ -1,7 +1,11 @@
-<view class="yu-title">图标</view>
-<view class="yu-grids">
-  <view class="yu-grid yu-grid-border" wx:for="{{icon}}" wx:key="index">
-    <view class="icon-{{item.name}} icon"></view>
-    <text>{{item.name}}</text>
+<yu-title title="图标" titleSize="14"></yu-title>
+<view class="yu-grid">
+  <view class="yu-grid-list" hover-class="yu-grid-list-hover" wx:for="{{icon}}" wx:for-index="index" wx:key="index">
+    <view class="yu-grid-item">
+      <view class="yu-grid-img">
+        <yu-icon type="{{item.text}}" color="#999" size="28"></yu-icon>
+      </view>
+      <view class="yu-grid-text">{{item.text}}</view>
+    </view>
   </view>
 </view>

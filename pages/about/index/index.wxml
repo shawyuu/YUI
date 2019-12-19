@@ -2,34 +2,24 @@
   <view class="header yu-bg-blue">
     <view class="yu-cell">
       <view class="yu-cell-hd">
-        <image class="yu-cell-lg-img yu-round" src='/img/logo.png' mode="widthFix"></image>
+        <image class="yu-cell-img" src='/img/logo.png' style="width: 48px;height: 48px;border-radius:24px;" mode="aspectFill"></image>
       </view>
-      <view class="yu-cell-bd yu-text-white">SHAW</view>
+      <view class="yu-cell-bd" style="color:#fff;">YU组件库</view>
     </view>
     <image class="header-bg" src="/img/wave.gif" mode="widthFix"></image>
   </view>
   <view class="yu-cells">
-    <navigator class="yu-cell"  style="position:relative;">
+    <view class="yu-cell" hover-class="yu-cell-hover" bindtap="bindClick">
       <button open-type="contact" class="service" />
       <view class="yu-cell-hd">
-        <view class="icon-wechat icon yu-cell-icon  yu-text-green"></view>
+        <image class="yu-cell-img" src='/img/ico_wechat.png' style="width: 22px;height: 22px;" mode="aspectFill"></image>
       </view>
       <view class="yu-cell-bd">微信客服</view>
       <view class="yu-cell-ft yu-cell-icon"></view>
-    </navigator>
-    <navigator url="/pages/about/update/update" class="yu-cell">
-      <view class="yu-cell-hd">
-        <view class="icon-safety_fill icon yu-cell-icon yu-text-sky"></view>
-      </view>
-      <view class="yu-cell-bd">更新日志</view>
-      <view class="yu-cell-ft yu-cell-icon"></view>
-    </navigator>
-    <navigator url="/pages/about/about/about" class="yu-cell">
-      <view class="yu-cell-hd">
-        <view class="icon-feedback_fill icon yu-cell-icon yu-text-orange"></view>
-      </view>
-      <view class="yu-cell-bd">关于YU组件库</view>
-      <view class="yu-cell-ft yu-cell-icon"></view>
-    </navigator>
+    </view>
+    <yu-cell title="支持" leftImg="/img/ico_wepay.png" leftSize="22" url="/pages/about/support/support" showArrow></yu-cell>
+    <yu-cell title="GitHub" leftImg="/img/ico_git.png" leftSize="22" showArrow bindclick="copyGitUrl"></yu-cell>
+    <yu-cell title="更新日志" leftImg="/img/ico_update.png" leftSize="22" url="/pages/about/update/update" showArrow></yu-cell>
+    <yu-cell title="关于YU组件库" leftImg="/img/ico_about.png" leftSize="22" url="/pages/about/about/about" showArrow></yu-cell>
   </view>
 </view>

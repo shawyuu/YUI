@@ -1,9 +1,0 @@
-<view class="yu-title">基本元素</view>
-<view class="yu-grids-float">
-  <view class="yu-grid yu-grid-col-2" wx:for="{{basics}}" wx:key="index">
-    <navigator url="{{item.url}}" class="nav yu-radius">
-      <view class="{{item.icon}} index-icon"></view>
-      <text class="index-text">{{item.name}}</text>
-    </navigator>
-  </view>
-</view>

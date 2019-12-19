@@ -1,2 +1,8 @@
-@import "shaw.wxss";
-@import "icon.wxss";
+@import "css/yu.wxss";
+/**app.wxss**/
+page {
+  height: 100%;
+}
+.page {
+  overflow: auto;
+}

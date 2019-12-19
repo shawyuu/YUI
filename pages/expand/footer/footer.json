@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "footer"
+  "navigationBarTitleText": "页脚footer",
+  "usingComponents": {
+    "yu-footer": "/components/footer/footer"
+  }
 }
