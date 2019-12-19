@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "yu-title": "/components/title/title",
+    "yu-panel": "/components/panel/panel",
+    "yu-carousel": "/components/carousel/carousel"
+  }
+}

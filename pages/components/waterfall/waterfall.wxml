@@ -1,0 +1,3 @@
+<yu-waterfall>
+  <yu-waterfall-item slot="{{index}}" wx:for="{{list}}" wx:key="index" key="{{index}}" text="{{item.text}}" img="{{item.img}}" header="{{item.header}}" info="{{item.info}}" isRadius></yu-waterfall-item>
+</yu-waterfall>

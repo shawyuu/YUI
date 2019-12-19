@@ -1,0 +1,4 @@
+<view style="width:100%;height:48px;">
+  <yu-search placeholder="请输入搜索内容"></yu-search>
+</view>
+<yu-indexlist list-data="{{cityList}}" topHeight="48"></yu-indexlist>

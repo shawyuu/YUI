@@ -1,0 +1,32 @@
+<view class="yu-card {{isRadius?'yu-card-radius':''}}">
+  <view class="yu-card-mask" wx:if="{{isShow}}" bindtouchstart="clickMoreAction"></view>
+  <view class="yu-card-img" wx:if="{{imgUrl}}">
+    <image src="{{imgUrl}}" class="{{isRadius?'yu-card-img-radius':''}}" mode="widthFix"></image>
+  </view>
+  <view class="yu-card-content">
+    <view class="yu-card-text" wx:if="{{text}}">
+      <text>{{text}}</text>
+    </view>
+    <view class="yu-flex yu-card-desc">
+      <view class="yu-flex-item">
+        <view class="yu-flex">
+          <view class="yu-card-header" wx:if="{{avatar}}">
+            <image src="{{avatar}}" class="{{info?'':'yu-card-desc-mini'}}" mode="widthFix"></image>
+          </view>
+          <view class="yu-flex-item">
+            <view class="yu-card-nickname">{{nickname}}</view>
+            <view class="yu-card-info" wx:if="{{info}}">{{info}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="yu-card-operate">
+        <view class="yu-card-more" catchtap="clickMoreAction"> 
+          <image src="more.png" class="{{info?'':'yu-card-desc-mini'}}" mode="widthFix"></image>
+        </view>
+        <view class="yu-card-action" wx:if="{{isShow}}">
+          <slot/>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

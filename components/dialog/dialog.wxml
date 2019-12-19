@@ -1,0 +1,14 @@
+<view class="yu-dialog" wx:if="{{showDialog}}">
+  <view class="yu-mask" catchtouchmove="catchTouch" bindtap="cancel"></view>
+  <view class="yu-dialog-box">
+    <view class="yu-dialog-title" wx:if="{{title}}">{{title}}</view>
+    <view class="yu-dialog-content">
+      <view class="yu-dialog-text yu-dialog-text-{{align}}" wx:if="{{text}}">{{text}}</view>
+      <slot wx:else></slot>
+    </view>
+    <view class="yu-dialog-btn">
+      <view class="yu-dialog-btn-default" style="color: {{cancelColor}}" bindtap="cancelEvent">{{cancelText}}</view>
+      <view class="yu-dialog-btn-primary" style="color: {{comfirmColor}}" bindtap="comfirmEvent">{{comfirmText}}</view>
+    </view>
+  </view>
+</view>

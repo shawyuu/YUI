@@ -1,0 +1,19 @@
+.yu-footer{
+  text-align: center;
+  padding:10px;
+}
+.yu-footer-hover{
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.yu-footer-content{
+  height:30px;
+  line-height:30px;
+  border-radius:3px;
+}
+.yu-footer-fixed{
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+}

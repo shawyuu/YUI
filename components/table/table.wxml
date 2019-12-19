@@ -1,0 +1,22 @@
+<view class="yu-table">
+  <view class="yu-table-fixed" style="width:{{fixWidth}}px;" bindtap="clickShowLong" wx:if="{{fixColumn}}">
+    <view class="yu-table-fixed-th">
+      <view class="yu-table-item" style="background:{{bgColor}};color:{{color}};">{{fixTitle}}</view>
+    </view>
+    <view class="yu-table-fixed-td">
+      <view class="yu-table-item" wx:for="{{fixContent}}" wx:key="index">{{item}}</view>
+    </view>
+  </view>
+  <scroll-view class="yu-table-scroll" scroll-x="true" style="padding-left:{{fixWidth}}px;width:calc(100% - {{fixWidth}}px);">
+    <view class="yu-table-content">
+      <view class="yu-table-tr">
+        <view class="yu-table-th" style="background:{{bgColor}};color:{{color}};width:{{width[index]}}px;" wx:for="{{tableHead}}" wx:key="index">{{item}}</view>
+      </view>
+      <view>
+        <view class="yu-table-tr" wx:for="{{tableBody}}" wx:key="idx" wx:for-index="idx">
+          <view class="yu-table-td"  wx:for="{{item}}" wx:key="key" wx:for-index="key" wx:for-item="value" style='width:{{width[key]}}px;'>{{value}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

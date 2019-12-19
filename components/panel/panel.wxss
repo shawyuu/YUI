@@ -1,0 +1,85 @@
+/* ==================
+        面板panel
+ ==================== */
+
+.yu-panel {
+  background-color: #fff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+}
+.yu-panel::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+.yu-panel-content{
+  font-size: 15px;
+  padding: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.yu-panel-content-hover{
+  background:#f5f5f5;
+}
+.yu-panel-l{
+  padding-right:10px;
+}
+.yu-panel-r{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width:100%;
+}
+
+.yu-media-title {
+  font-size: 16px;
+  color: #000;
+  width: auto;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.yu-media-desc {
+  padding-top: 4px;
+  color: #999;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.yu-panel-action{
+  padding:10px;
+  position: relative;
+}
+
+.yu-panel-action::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "yu-tag": "/components/tag/tag",
+    "yu-title": "/components/title/title"
+  },
+  "navigationBarTitleText": "标签Tag",
+  "navigationBarBackgroundColor":"#3565ee",
+  "navigationBarTextStyle": "white"
+}

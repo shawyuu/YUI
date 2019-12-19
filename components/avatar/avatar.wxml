@@ -1,0 +1,16 @@
+<view class="yu-avatar-group" wx:if="{{avatarArr.length != 0}}" bindtap="bindClick">
+  <view class="yu-avatar-content" wx:for="{{avatarArr}}" wx:key="*this" style="width:{{size}}px;height:{{size}}px;line-height:{{size}}px;background:{{bgColor}};">
+    <image wx:if="{{item}}" src='{{item}}' mode="widthFix"></image>
+    <text wx:else style="font-size:{{textSize}}px;">{{text}}</text>
+  </view>
+</view>
+<view class="yu-avatar" wx:else bindtap="bindClick">
+  <view class="yu-avatar-content" style="border-radius:{{shape}}px;width:{{size}}px;height:{{size}}px;line-height:{{size}}px;background:{{bgColor}};">
+    <image wx:if="{{src}}" src='{{src}}' mode="widthFix"></image>
+    <text wx:else style="font-size:{{textSize}}px;">{{text}}</text>
+  </view>
+  <view wx:if="{{tagText}}" class="yu-avatar-tag" style="background:{{tagBg}};">{{tagText}}</view>
+  <view wx:if="{{isSlot}}" class="yu-avatar-tag" style="background:{{tagBg}};">
+    <slot></slot>
+  </view>
+</view>

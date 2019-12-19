@@ -1,0 +1,7 @@
+<view class='yu-waterfall'>
+  <view class='yu-waterfall-list'>
+    <view class='yu-waterfall-item' wx:for="{{waterfallList}}" wx:key="index">
+      <slot name="{{item.key}}"></slot>
+    </view>
+  </view>
+</view>

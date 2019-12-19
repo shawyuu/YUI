@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "yu-avatar": "/components/avatar/avatar",
+    "yu-title": "/components/title/title",
+    "yu-icon": "/components/icon/icon"
+  },
+  "navigationBarTitleText": "头像Avatar"
+}

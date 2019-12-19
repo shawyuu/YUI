@@ -1,0 +1,115 @@
+.yu-indexlist-content {
+  position: relative;
+  height: 100%;
+}
+
+.scroll-view-title {
+  background: #f2f2f2;
+  color: #666;
+  padding: 0 15px;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+}
+
+.scroll-view {
+  height: 100%;
+}
+
+.scroll-view-item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.scroll-view-item-hover {
+  background-color: #f7f8f9;
+}
+
+.scroll-view-item::after {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+
+.scroll-view-item-hd {
+  padding-right: 8px;
+}
+
+.scroll-view-item-hd text {
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
+  border-radius: 16px;
+  background: #f2f2f2;
+}
+
+.scroll-view-item-hd image {
+  width: 32px;
+  height: 32px;
+  padding: 8px 0;
+  border-radius: 16px;
+}
+
+.scroll-view-item-bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 48px;
+  line-height: 48px;
+}
+
+.scroll-nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.scroll-nav-item {
+  font-size: 22rpx;
+  padding: 0rpx 12rpx;
+  color: #666;
+}
+
+.scroll-nav-item .item {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  line-height: 32rpx;
+}
+
+.scroll-indicator {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50rpx;
+  line-height:100rpx;
+  color:#fff;
+  font-size: 50rpx;
+  background:rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}

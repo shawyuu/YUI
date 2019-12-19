@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "组件",
+  "usingComponents": {
+    "yu-cell": "/components/cell/cell",
+    "yu-title": "/components/title/title"
+  }
+}

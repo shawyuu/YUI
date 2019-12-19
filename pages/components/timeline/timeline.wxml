@@ -1,0 +1,5 @@
+<yu-timebox wx:for="{{timeArr}}" wx:for-index="index" wx:for-item="list" wx:key="index" time="{{list.time}}">
+  <yu-timeline wx:for="{{list.list}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" text="{{item.text}}" bgColor="{{item.color}}" color="#fff">
+    <yu-icon slot="icon" type="{{item.icon}}" color="{{item.color}}" size="14"></yu-icon>
+  </yu-timeline>
+</yu-timebox>

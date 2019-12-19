@@ -1,0 +1,9 @@
+<yu-tabs tabs="{{tabs}}" swipeable>
+  <yu-tabs-panel slot="{{index}}" key="{{index}}" wx:for="{{tabs}}" wx:key="index">
+    <yu-panel imgUrl="/img/default.png" wx:for="{{list}}" wx:key="index" title="{{item}}" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+  </yu-tabs-panel> 
+</yu-tabs>
+
+<!-- <scroll-view class="yu-panel-wraper" scroll-y>
+  <yu-panel imgUrl="/img/default.png" wx:for="{{list}}" wx:key="index" title="{{item}}" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+</scroll-view> -->

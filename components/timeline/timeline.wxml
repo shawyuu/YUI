@@ -1,0 +1,10 @@
+<view class="yu-timeline">
+  <view class="yu-timeline-icon">
+    <image wx:if="{{img}}" src="{{img}}"></image>
+    <slot wx:else name="icon"></slot>
+  </view>
+  <view class="yu-timeline-content" style="background: {{bgColor}};color:{{color}};">
+    <text wx:if="{{text}}">{{text}}</text>
+    <slot wx:else name="content"></slot>
+  </view>
+</view>

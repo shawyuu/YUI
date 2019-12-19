@@ -1,0 +1,16 @@
+<view class="content">
+  <view class="spacing" wx:for="{{3}}">
+    <yu-card isRadius text="后来终于明白，生活中的你为什么不招人待见了，因为不够虚伪，因为嘴不甜，不会拍马屁， 不会睁着眼睛说瞎话。" nickname="SHAW" imgUrl="/img/img1.jpg" avatar="/img/logo.png">
+      <view class="card-icon">
+        <view class="card-icon-item">
+          <yu-icon type="like" color="#fff" size="20"></yu-icon>
+          <text>点赞</text>
+        </view>
+        <view class="card-icon-item">
+          <yu-icon type="message" color="#fff" size="20"></yu-icon>
+          <text>评价</text>
+        </view>
+      </view>
+    </yu-card>
+  </view>
+</view>

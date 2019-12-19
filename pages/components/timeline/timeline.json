@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "timeline",
+  "usingComponents": {
+    "yu-timebox": "/components/timeline/timebox",
+    "yu-timeline": "/components/timeline/timeline",
+    "yu-icon": "/components/icon/icon"
+  }
+}

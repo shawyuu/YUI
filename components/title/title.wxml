@@ -1,0 +1,11 @@
+<view class="yu-title">
+  <view class="yu-title-item">
+    <image wx:if="{{imgUrl}}" src="{{imgUrl}}" style="width: {{imgSize}}px;height: {{imgSize}}px;" mode="widthFix"></image>
+    <slot wx:else name="icon"></slot>
+    <text class="yu-title-name" style="color: {{titleColor}};font-size: {{titleSize}}px;">{{title}}</text>
+  </view>
+  <view class="yu-title-action">
+    <view class="yu-title-text" style="color: {{textColor}};font-size: {{textSize}}px;" wx:if="{{text}}" bindtap="bindAction">{{text}}</view>
+    <slot wx:else name="action"></slot>
+  </view>
+</view>

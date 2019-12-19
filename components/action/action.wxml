@@ -1,0 +1,12 @@
+<view class="yu-action">
+  <view class="yu-form" data-value="{{value}}" catchtap="bindClick">
+    <view class="yu-form-hd" wx:if="{{label}}">
+      <text>{{label}}</text>
+    </view>
+    <view class="yu-form-bd">
+      <view class="yu-action-value" wx:if="{{value}}">{{value}}</view>
+      <view class="yu-action-placeholder" wx:else>{{placeholder}}</view>
+    </view>
+    <view class="yu-form-ft {{showArrow? 'yu-cell-icon':''}}"></view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+.content{
+  padding:15px;
+}
+.content .spacing{
+  margin-bottom:15px;
+}
+.card-icon-item{
+  padding:0 5px;
+  text-align: center;
+}
+.card-icon-item text{
+  font-size:13px;
+  padding-left:4px;
+  padding-bottom:3px;
+}

@@ -1,0 +1,36 @@
+<yu-title title="基本表单"></yu-title>
+<view class="content">
+  <yu-input label="表单" placeholder="请输入内容"></yu-input>
+  <yu-input label="手机号码" placeholder="请输入正确的手机号码" icon="warn"></yu-input>
+  <yu-input label="图片验证码" placeholder="请输入图片验证码" src="/img/default.png"></yu-input>
+  <yu-input label="手机验证码" placeholder="请输入手机验证码" text="获取验证码" textColor="#3565ee"></yu-input>
+  <yu-action label="选项" value="{{actionList[actionValue]}}" showArrow bindclick="bindAction"></yu-action>
+  <yu-switch label="开关" color="#3565ee"></yu-switch>
+  <!-- <yu-radio label="单选" color="#3565ee" radioList="{{radio}}"></yu-radio> -->
+</view>
+<yu-title title="选择器"></yu-title>
+<view class="content">
+  <yu-picker label="单列" range="{{actionList}}" value="{{index}}" bindchange="pickerChange" text="{{actionList[index]}}"></yu-picker>
+  <yu-picker label="单列" range="{{pickerList}}" range-key="name" value="{{index}}" bindchange="pickerChange" text="{{pickerList[index].name}}"></yu-picker>
+  <yu-picker mode="multiSelector" label="多列" range="{{multiArray}}" value="{{multiIndex}}" bindcolumn="multiColumnChange" bindchange="multiPickerChange" text="{{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}"></yu-picker>
+  <yu-picker mode="multiSelector" label="多列" range="{{multiArrayObj}}" range-key="name" value="{{multiIndex}}" bindcolumn="multiColumnChange" bindchange="multiPickerChange" text="{{multiArrayObj[0][multiIndex[0]].name}}-{{multiArrayObj[1][multiIndex[1]].name}}"></yu-picker>
+  <yu-picker mode="time" label="时间" value="{{timeValue}}" bindchange="pickerTimeChange"></yu-picker>
+  <yu-picker mode="date" label="日期" value="{{dateValue}}" bindchange="pickerDateChange"></yu-picker>
+  <yu-picker mode="region" label="省市区" value="{{region}}" bindchange="pickerRegionChange" text="{{regionValue[0]}}-{{regionValue[1]}}-{{regionValue[2]}}"></yu-picker>
+</view>
+<yu-title title="单选"></yu-title>
+<view class="content">
+  <yu-radiogroup type="block" bindchange="radioChange">
+    <yu-radio color="#3565ee" wx:for="{{radioList}}" wx:key="index" text="{{item.name}}" color="#3565ee" value="{{item.value}}"></yu-radio>
+  </yu-radiogroup>
+</view>
+<yu-title title="多选"></yu-title>
+<view class="content">
+  <yu-checkboxgroup bindchange="bindCheckbox">
+    <yu-checkbox wx:for="{{checkboxList}}" wx:key="index" text="{{item.name}}" color="#3565ee" value="{{item.value}}" checked="{{item.checked}}"></yu-checkbox>
+  </yu-checkboxgroup>
+</view>
+<yu-title title="文本域"></yu-title>
+<view class="content">
+  <yu-textarea label="文本域" placeholder="请输入内容"></yu-textarea>
+</view>

@@ -1,0 +1,82 @@
+
+
+/* 行内选择样式 */
+
+.yu-radio-inline {
+  padding: 12px 6px;
+  display: inline-block;
+}
+
+.yu-radio-inline-label {
+  margin: 0 2px;
+}
+
+.yu-radio-inline-label .yu-radio {
+  transform: scale(0.8);
+}
+
+.yu-radio-inline .yu-radio-text{
+  vertical-align: middle;
+}
+
+/* 块选择样式 */
+.yu-radio-border{
+  position: relative;
+}
+
+.yu-radio-border::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+
+.yu-radio-block {
+  background: #fff;
+  padding: 12px 15px;
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.yu-radio-block-hd .yu-radio {
+  transform: scale(0.8);
+}
+
+.yu-radio-block-bd {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.yu-radio-block .yu-radio-text {
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.yu-radio-block-line {
+  background: #fff;
+  padding: 12px 15px;
+  position: relative;
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.yu-radio-block-line::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}

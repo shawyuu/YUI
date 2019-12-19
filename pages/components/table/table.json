@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "表格Table",
+  "usingComponents": {
+    "yu-table": "/components/table/table"
+  }
+}

@@ -1,0 +1,32 @@
+.yu-carousel {
+  min-height: 360rpx;
+}
+
+.yu-carousel-img {
+  width: 100%;
+  height:100%;
+}
+
+.yu-carousel-card {
+  min-height: 360rpx;
+}
+
+.yu-carousel-card swiper-item {
+  width: 80% !important;
+  left: 10%;
+  padding: 30rpx 0 60rpx;
+  box-sizing: border-box;
+}
+
+.yu-carousel-card .yu-carousel-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+  transform: scale(0.9);
+  transition: all 0.2s ease-in 0s;
+}
+
+.yu-carousel-card swiper-item.current  .yu-carousel-img {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}

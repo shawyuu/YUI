@@ -1,0 +1,20 @@
+.yu-waterfall{
+  padding:20rpx;
+}
+
+.yu-waterfall-list {
+  column-count: 2;
+  -webkit-column-count:2;
+  column-gap: 20rpx;
+}
+
+.yu-waterfall-item {
+  /* background-color: #fff; */
+  break-inside: avoid;
+  box-sizing: border-box;
+  margin-bottom:20rpx;
+}
+
+/* .yu-waterfall-item image {
+  width: 100%;
+} */

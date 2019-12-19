@@ -1,0 +1,6 @@
+<view class="yu-grid-item" data-url="{{url}}" data-index="{{key}}" catchtap="clickGrid">
+  <view class="yu-grid-img" wx:if="{{imgUrl}}">
+    <image src="{{imgUrl}}" style="width: {{imgSize}}px;height: {{imgSize}}px;"></image>
+  </view>
+  <view class="yu-grid-text" style="color: {{textColor}};font-size: {{textSize}}px;">{{text}}</view>
+</view>

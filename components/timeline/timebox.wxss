@@ -1,0 +1,13 @@
+.yu-timebox {
+  display: block;
+  background: #fff;
+}
+
+.yu-timebox .yu-time {
+  width: 60px;
+  text-align: center;
+  padding: 10px 0 10px 5px;
+  font-size: 26rpx;
+  color: #888;
+  display: block;
+}

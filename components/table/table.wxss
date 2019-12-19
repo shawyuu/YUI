@@ -1,0 +1,87 @@
+/* ==================
+      表格table
+ ==================== */
+
+.yu-table{
+  position: relative;
+}
+.yu-table-fixed{
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:2;
+  box-shadow: 2rpx -8rpx 30rpx rgba(0,0,0,.15);
+}
+.yu-table-fixed-th .yu-table-item{
+  background: rgb(237, 248, 255);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 8px;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.yu-table-fixed-td .yu-table-item{
+  background: #fff;
+  font-size: 14px;
+  padding: 0 8px;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.yu-table-scroll{
+  width:100%;
+}
+.yu-table-tr{
+  white-space: nowrap;
+}
+
+.yu-table-th{
+  background: rgb(237, 248, 255);
+  width:100px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 8px;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.yu-table-td{
+  background: #fff;
+  width:100px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 8px;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.yu-table-tr:nth-child(even) .yu-table-td{
+  background: #f5f6f7;
+}
+.yu-table-fixed-td .yu-table-item:nth-child(even){
+  background: #f5f6f7;
+}

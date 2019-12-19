@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="content">
+    <yu-title title="基本" titleColor="#999"></yu-title>
+    <yu-cell title="流式布局Flex" showArrow url="/pages/basic/flex/flex"></yu-cell>
+    <yu-cell title="文本Text" showArrow url="/pages/basic/text/text"></yu-cell>
+    <yu-cell title="颜色Color" showArrow url="/pages/basic/color/color"></yu-cell>
+    <yu-cell title="图标Icon" showArrow url="/pages/basic/icon/icon"></yu-cell>
+  </view>
+  <view class="content">
+    <yu-title title="组件" titleColor="#999"></yu-title>
+    <yu-cell title="头像Avatar" showArrow url="/pages/components/avatar/avatar"></yu-cell>
+    <yu-cell title="按钮Button" showArrow url="/pages/components/button/button"></yu-cell>
+    <yu-cell title="标签Tag" showArrow url="/pages/components/tag/tag"></yu-cell>
+    <yu-cell title="单元格Cell" showArrow url="/pages/components/cell/cell"></yu-cell>
+    <yu-cell title="面板Panel" showArrow url="/pages/components/panel/panel"></yu-cell>
+    <yu-cell title="卡片Card" showArrow url="/pages/components/card/card"></yu-cell>
+    <yu-cell title="折叠面板Collapse" showArrow url="/pages/components/collapse/collapse"></yu-cell>
+    <yu-cell title="九宫格Grid" showArrow url="/pages/components/grid/grid"></yu-cell>
+    <yu-cell title="表单Form" showArrow url="/pages/components/form/form"></yu-cell>
+    <yu-cell title="轮播图Carousel" showArrow url="/pages/components/carousel/carousel"></yu-cell>
+    <yu-cell title="时间轴Timeline" showArrow url="/pages/components/timeline/timeline"></yu-cell>
+    <yu-cell title="表格Table" showArrow url="/pages/components/table/table"></yu-cell>
+    <!-- <yu-cell title="瀑布流Waterfall" showArrow url="/pages/components/waterfall/waterfall"></yu-cell> -->
+    <yu-cell title="选项卡Tabs" showArrow url="/pages/components/tabs/tabs"></yu-cell>
+  </view>
+</view>

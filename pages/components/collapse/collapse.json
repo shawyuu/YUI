@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "折叠面板collapse",
+  "usingComponents": {
+    "yu-collapse": "/components/collapse/collapse",
+    "yu-collapse-list": "/components/collapse/collapselist"
+  }
+}

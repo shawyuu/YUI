@@ -1,0 +1,7 @@
+<view id="footer" class="yu-footer {{fix? 'yu-footer-fixed':''}}" hover-class="yu-footer-hover">
+  <view class="yu-footer-content" style="background:{{bgColor}};">
+    <navigator wx:if="{{url && text}}" url="{{url}}" style="color:{{color}};font-size:{{size}}px; ">{{text}}</navigator>
+    <view wx:elif="{{!url && text}}" class="yu-footer-text " style="color:{{color}};font-size:{{size}}px; " bindtap="bindClick">{{text}}</view>
+    <slot wx:else></slot>
+  </view>
+</view>

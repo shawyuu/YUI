@@ -1,0 +1,17 @@
+<view class="yu-radio-group">
+  <view class="yu-form" wx:if="{{type == 'inline'}}">
+    <view class="yu-form-hd" wx:if="{{label}}">
+      <text>{{label}}</text>
+    </view>
+    <view class="yu-form-bd">
+      <radio-group>
+        <slot/>
+      </radio-group>
+    </view>
+  </view>
+  <view wx:elif="{{type == 'block'}}">
+    <radio-group>
+      <slot/>
+    </radio-group>
+  </view>
+</view>

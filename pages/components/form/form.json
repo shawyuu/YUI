@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "表单Form",
+  "usingComponents": {
+    "yu-input": "/components/input/input",
+    "yu-radiogroup": "/components/radio/radiogroup",
+    "yu-radio": "/components/radio/radio",
+    "yu-title": "/components/title/title",
+    "yu-checkboxgroup": "/components/checkbox/checkboxgroup",
+    "yu-checkbox": "/components/checkbox/checkbox",
+    "yu-action": "/components/action/action",
+    "yu-textarea": "/components/textarea/textarea",
+    "yu-switch": "/components/switch/switch",
+    "yu-picker": "/components/picker/picker"
+  }
+}

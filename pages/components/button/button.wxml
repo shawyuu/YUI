@@ -1,0 +1,38 @@
+<view style="padding:10px 0 0;">
+  <view class="btn-spacing-block">
+    <yu-button text="默认按钮"></yu-button>
+  </view>
+  <view class="btn-spacing-block">
+    <yu-button text="默认禁用按钮" disabled></yu-button>
+  </view>
+  <view class="btn-spacing-block">
+    <yu-button bg-color="#3565ee" color="#fff" text="主色按钮"></yu-button>
+  </view>
+  <view class="btn-spacing-block">
+    <yu-button bg-color="#3565ee" color="#fff" text="主色禁用按钮" disabled></yu-button>
+  </view>
+  <view class="btn-spacing-block">
+    <yu-button plain="true" color="#3565ee" text="镂空按钮"></yu-button>
+  </view>
+  <view class="btn-spacing-block">
+    <yu-button bg-color="#F76260" color="#fff" text="警告按钮"></yu-button>
+  </view>
+  
+</view>
+<view style="padding:5px 10px;">
+  <view class="btn-spacing-inline">
+    <yu-button size="mini" text="小尺寸按钮"></yu-button>
+  </view>
+  <view class="btn-spacing-inline">
+    <yu-button size="mini" disabled  text="小尺寸禁用按钮"></yu-button>
+  </view>
+  <view class="btn-spacing-inline">
+    <yu-button size="mini" bg-color="#3565ee" color="#fff" text="主色按钮"></yu-button>
+  </view>
+  <view class="btn-spacing-inline">
+    <yu-button size="mini" color="#3565ee" text="镂空按钮" plain></yu-button>
+  </view>
+  <view class="btn-spacing-inline">
+    <yu-button size="mini" bg-color="#F76260" color="#fff" text="警告按钮"></yu-button>
+  </view>
+</view>

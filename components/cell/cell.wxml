@@ -1,0 +1,22 @@
+<navigator url="{{url}}" wx:if="{{url}}" class="yu-cell" hover-class="yu-cell-hover">
+  <view class="yu-cell-hd">
+    <image class="yu-cell-img" wx:if="{{leftImg}}" src='{{leftImg}}' style="width: {{leftSize}}px;height: {{leftSize}}px;" mode="aspectFill"></image>
+    <slot wx:else name="icon"></slot>
+  </view>
+  <view class="yu-cell-bd" style="color: {{titleColor}}">{{title}}</view>
+  <view class="yu-cell-ft {{showArrow? 'yu-cell-icon':''}}">
+    <image class="yu-cell-img" wx:if="{{rightImg}}" src='{{rightImg}}' style="width: {{rightSize}}px;height: {{rightSize}}px;" mode="aspectFill"></image>
+    <text wx:else style="color : {{valueColor}}">{{value}}</text>
+  </view>
+</navigator>
+<view wx:else class="yu-cell" hover-class="yu-cell-hover" bindtap="bindClick">
+  <view class="yu-cell-hd">
+    <image class="yu-cell-img" wx:if="{{leftImg}}" src='{{leftImg}}' style="width: {{leftSize}}px;height: {{leftSize}}px;" mode="aspectFill"></image>
+    <slot wx:else name="icon"></slot>
+  </view>
+  <view class="yu-cell-bd" style="color: {{titleColor}}">{{title}}</view>
+  <view class="yu-cell-ft {{showArrow? 'yu-cell-icon':''}}">
+    <image class="yu-cell-img" wx:if="{{rightImg}}" src='{{rightImg}}' style="width: {{rightSize}}px;height: {{rightSize}}px;" mode="aspectFill"></image>
+    <text wx:else style="color : {{valueColor}}">{{value}}</text>
+  </view>
+</view>

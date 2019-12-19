@@ -1,0 +1,14 @@
+<view class="yu-collapse-list">
+  <view class="yu-collapse-item" hover-class="yu-collapse-hover" data-index="{{index}}" catchtap="bindClick">
+    <view class="yu-collapse-hd">
+      <image class="yu-collapse-img" wx:if="{{imgUrl}}" src='{{imgUrl}}' style="width: {{imgSize}}px;height: {{imgSize}}px;" mode="aspectFill"></image>
+      <slot wx:else name="icon"></slot>
+    </view>
+    <view class="yu-collapse-bd">{{title}}</view>
+    <view class="yu-collapse-ft {{showContent ? 'yu-collapse-show':''}}"></view>
+  </view>
+  <view class="yu-collapse-content" wx:if="{{showContent}}">
+    <text wx:if="{{content}}">{{content}}</text>
+    <slot wx:else name="content"></slot>
+  </view>
+</view>

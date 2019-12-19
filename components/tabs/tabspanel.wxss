@@ -1,0 +1,6 @@
+.yu-panel-wraper{
+  height:100%;
+}
+.yu-tabs-panel-content{
+  height:100%;
+}

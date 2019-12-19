@@ -1,0 +1,5 @@
+<view class="yu-grid">
+  <view class="yu-grid-list" hover-class="yu-grid-list-hover"  style="width: {{width}}%;" wx:for="{{gridItems}}" wx:key="index">
+    <slot name="{{item.key}}"></slot>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+.yu-tag-content{
+  background: #fff;
+  padding:15px 10px;
+  margin-bottom:10px;
+}

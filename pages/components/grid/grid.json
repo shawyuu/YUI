@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "yu-grid": "/components/grid/grid",
+    "yu-grid-item": "/components/grid/griditem"
+  },
+  "navigationBarTitleText": "九宫格Grid"
+}

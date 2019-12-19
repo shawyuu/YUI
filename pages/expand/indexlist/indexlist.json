@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "索引列表indexlist",
+  "usingComponents": {
+    "yu-indexlist": "/components/indexlist/indexlist",
+    "yu-search": "/components/search/search"
+  }
+}

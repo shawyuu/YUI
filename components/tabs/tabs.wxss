@@ -1,0 +1,41 @@
+.yu-tabs {
+  height: 100%;
+}
+
+.yu-tab-navbar {
+  white-space: nowrap;
+  text-align: center;
+  background: #fff;
+  box-sizing: border-box;
+  height:50px;
+  /* position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  z-index:9; */
+}
+
+.yu-navbar-item {
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 4px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.yu-navbar-item-current {
+  color: #3279e4;
+  border-bottom:3px solid #3279e4; 
+}
+
+.yu-tab-panel {
+  height: calc(100% - 50px);
+}
+
+.yu-tab-panel swiper-item {
+  overflow-y: auto;
+}
+
+

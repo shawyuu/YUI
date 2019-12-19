@@ -1,0 +1,13 @@
+.content {
+  padding: 10px;
+}
+
+.spacing {
+  margin: 5px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: #fff;
+  height: 36px;
+  line-height: 36px;
+  color: #333;
+}

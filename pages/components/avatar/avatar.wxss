@@ -1,0 +1,10 @@
+.content{
+  padding:10px;
+}
+
+.content yu-avatar{
+  margin:0 5px;
+}
+.content .yu-icon{
+  line-height: 18px;
+}

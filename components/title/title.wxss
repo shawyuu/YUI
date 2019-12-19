@@ -1,0 +1,52 @@
+.yu-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 8px 15px;
+  background: #fff;
+  position: relative;
+}
+
+.yu-title::before {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+
+.yu-title-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height:20px;
+  line-height:20px;
+  font-size: 13px;
+}
+
+.yu-title-name {
+  line-height:20px;
+  color: #333;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.yu-title-action{
+  font-size: 13px;
+  height:20px;
+  line-height:20px;
+}

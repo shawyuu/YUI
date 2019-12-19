@@ -1,0 +1,14 @@
+<view wx:if="{{type == 'inline'}}" data-value="{{value}}" class="yu-radio-inline" catchtap="radioClick">
+  <label class="yu-radio-inline-label">
+    <radio class="yu-radio" color="{{color}}" value="{{value}}" checked="{{isCheck}}" disabled="{{disabled}}"/>
+    <text class="yu-radio-text">{{text}}</text>
+  </label>
+</view>
+<label wx:else class="yu-radio-block {{showBorder?'yu-radio-border':''}}" data-value="{{value}}" catchtap="radioClick">
+  <view class="yu-radio-block-hd">
+    <radio class="yu-radio" color="{{color}}" value="{{value}}" checked="{{isCheck}}" disabled="{{disabled}}"/>
+  </view>
+  <view class="yu-radio-block-bd">
+    <text class="yu-radio-text">{{text}}</text>
+  </view>
+</label>

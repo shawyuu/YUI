@@ -1,0 +1,19 @@
+<view class="page">
+  <yu-custom title="组件库" colorTheme="white" bgImg="/img/bg.png" bind:navLeft="bindHome" bind:navRight="bindBack"  >
+    <view slot="content">
+      <yu-cell title="单元格"></yu-cell>
+      <yu-cell title="单元格" showArrow url="/pages/index/index"></yu-cell>
+      <yu-cell title="单元格" titleColor="#3565ee" showArrow></yu-cell>
+      <yu-cell rightImg="/img/default.png" rightSize="24" title="单元格" showArrow></yu-cell>
+      <yu-cell rightImg="/img/default.png" rightSize="36" title="单元格" showArrow></yu-cell>
+      <yu-cell leftImg="/img/default.png" leftSize="24" title="单元格"></yu-cell>
+      <yu-cell leftImg="/img/default.png" leftSize="36" title="单元格"></yu-cell>
+      <yu-cell title="单元格" value="说明"></yu-cell>
+      <yu-cell title="单元格" value="说明" valueColor="#3565ee"></yu-cell>
+      <yu-cell title="单元格" value="说明" showArrow></yu-cell>
+      <yu-cell title="单元格" value="说明"></yu-cell>
+      <yu-cell title="单元格" value="说明" valueColor="#3565ee"></yu-cell>
+      <yu-cell title="单元格" value="说明" showArrow></yu-cell>
+    </view>
+  </yu-custom>
+</view>

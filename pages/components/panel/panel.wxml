@@ -1,0 +1,26 @@
+<view style="margin-bottom:10px;">
+  <yu-title title="图文组合列表"></yu-title>
+  <yu-panel imgUrl="/img/default.png" title="标题栏" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+  <yu-panel imgUrl="/img/default.png" title="标题栏" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+</view>
+<view style="margin-bottom:10px;">
+  <yu-title title="矩形图文组合列表"></yu-title>
+  <yu-panel imgUrl="/img/default.png" imgWidth="72" title="标题栏" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+  <yu-panel imgUrl="/img/default.png" imgWidth="72" title="标题栏" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+</view>
+<view style="margin-bottom:10px;">
+  <yu-title title="纯文本组合列表"></yu-title>
+  <yu-panel title="标题栏" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+  <yu-panel title="标题栏" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍"></yu-panel>
+</view>
+<view style="margin-bottom:10px;">
+  <yu-title title="带操作图文组合列表"></yu-title>
+  <view wx:for="{{2}}" wx:key="index" style="margin-bottom:10px;">
+    <yu-panel imgUrl="/img/default.png" title="标题栏" desc="这里是介绍，很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的很长很长的介绍" action>
+      <view slot="action">
+        <yu-tag value="操作" color="#3565ee"></yu-tag>
+        <yu-tag value="删除"></yu-tag>
+      </view>
+    </yu-panel>
+  </view>
+</view>

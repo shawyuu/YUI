@@ -1,0 +1,441 @@
+
+/*
+  shaw UI
+*/
+
+/* ==================
+        初始化
+ ==================== */
+
+page {
+  background: #f2f2f2;
+  font-size: 30rpx;
+  color: #000;
+}
+
+image {
+  vertical-align: middle;
+  border: none;
+}
+
+/* ==================
+        基本通用样式
+ ==================== */
+
+/* 元素类型 */
+
+.yu-block {
+  display: block;
+}
+
+.yu-inline {
+  display: inline;
+}
+
+.yu-inblock {
+  display: inline-block;
+}
+
+/* 圆角 */
+
+.yu-radius-sm {
+  border-radius: 10rpx;
+}
+
+.yu-radius {
+  border-radius: 16rpx;
+}
+
+.yu-radius-lg {
+  border-radius: 24rpx;
+}
+
+.yu-round {
+  border-radius: 1000rpx;
+}
+
+/* 元素对齐 */
+
+.yu-align-l {
+  text-align: left;
+}
+
+.yu-align-c {
+  text-align: center;
+}
+
+.yu-align-r {
+  text-align: right;
+}
+
+.yu-align-j {
+  text-align: justify;
+}
+
+/* 文本溢出显示省略号(单行/两行/三行) */
+
+.yu-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.yu-ellipsis-two {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.yu-ellipsis-three {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* ==================
+        文本字体大小
+ ==================== */
+
+.yu-font-min {
+  font-size: 24rpx;
+}
+
+.yu-font-sm {
+  font-size: 26rpx;
+}
+
+.yu-font-normal {
+  font-size: 28rpx;
+}
+
+.yu-font{
+  font-size: 30rpx;
+}
+
+.yu-font-md {
+  font-size: 32rpx;
+}
+
+.yu-font-lg {
+  font-size: 36rpx;
+}
+
+.yu-font-max {
+  font-size: 60rpx;
+}
+
+/* ==================
+        背景颜色background
+ ==================== */
+
+.yu-bg-white {
+  background: #fff;
+}
+
+.yu-bg-grey-light {
+  background: #f2f2f2;
+}
+
+.yu-bg-grey {
+  background: #999;
+}
+
+.yu-bg-grey-dark {
+  background: #666;
+}
+
+.yu-bg-blue {
+  background: #3565ee;
+}
+
+.yu-bg-sky {
+  background: #10aeff;
+}
+
+.yu-bg-olive {
+  background: #8dc63f;
+}
+
+.yu-bg-green {
+  background: #45ca57;
+}
+
+.yu-bg-red {
+  background: #ff564a;
+}
+
+.yu-bg-pink {
+  background: #f82fa0;
+}
+
+.yu-bg-purple {
+  background: #6a36c4;
+}
+
+.yu-bg-yellow {
+  background: #ffd202;
+}
+
+.yu-bg-orange {
+  background: #ffa800;
+}
+
+/* ==================
+        渐变背景
+ ==================== */
+
+.yu-grad-red {
+  background-image: linear-gradient(135deg, #f42e29, #f73fac);
+  color: #fff;
+}
+
+.yu-grad-blue {
+  background-image: linear-gradient(135deg, #7330ef, #00b3ff);
+  color: #fff;
+}
+
+.yu-grad-cyan {
+  background-image: linear-gradient(135deg, #008cff, #00ffd5);
+  color: #fff;
+}
+
+.yu-grad-yellow {
+  background-image: linear-gradient(135deg, #ff8b00, #ffce00);
+  color: #fff;
+}
+
+/* ==================
+        文本颜色text
+ ==================== */
+
+.yu-text-white {
+  color: #fff !important;
+}
+
+.yu-text-grey-light {
+  color: #f2f2f2 !important;
+}
+
+.yu-text-grey {
+  color: #999 !important;
+}
+
+.yu-text-grey-dark {
+  color: #666 !important;
+}
+
+.yu-text-black {
+  color: #000 !important;
+}
+
+.yu-text-blue {
+  color: #3565ee !important;
+}
+
+.yu-text-sky {
+  color: #10aeff !important;
+}
+
+.yu-text-olive {
+  color: #8dc63f !important;
+}
+
+.yu-text-green {
+  color: #45ca57 !important;
+}
+
+.yu-text-red {
+  color: #ff564a !important;
+}
+
+.yu-text-pink {
+  color: #f82fa0 !important;
+}
+
+.yu-text-purple {
+  color: #6a36c4 !important;
+}
+
+.yu-text-yellow {
+  color: #ffd202 !important;
+}
+
+.yu-text-orange {
+  color: #ffa800 !important;
+}
+
+/* ==================
+        线条颜色
+ ==================== */
+
+.yu-line-white {
+  border: 1rpx solid #fff;
+}
+
+.yu-line-grey-light {
+  border: 1rpx solid #f2f2f2;
+}
+
+.yu-line-grey {
+  border: 1rpx solid #999;
+}
+
+.yu-line-grey-dark {
+  border: 1rpx solid #666;
+}
+
+.yu-line-blue {
+  border: 1rpx solid #3565ee;
+}
+
+.yu-line-sky {
+  border: 1rpx solid #10aeff;
+}
+
+.yu-line-olive {
+  border: 1rpx solid #8dc63f;
+}
+
+.yu-line-green {
+  border: 1rpx solid #45ca57;
+}
+
+.yu-line-red {
+  border: 1rpx solid #ff564a;
+}
+
+.yu-line-pink {
+  border: 1rpx solid #f82fa0;
+}
+
+.yu-line-purple {
+  border: 1rpx solid #6a36c4;
+}
+
+.yu-line-yellow {
+  border: 1rpx solid #ffd202;
+}
+
+.yu-line-orange {
+  border: 1rpx solid #ffa800;
+}
+
+/* ==================
+        flex布局
+ ==================== */
+
+.yu-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.yu-flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.yu-flex-item-double {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  flex: 2;
+}
+
+.yu-flex-item-thrice {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  flex: 3;
+}
+
+/* ==================
+        复选框样式
+ ==================== */
+
+ .yu-checkbox{
+  background: #fff;
+  padding:12px 15px;
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+}
+ .yu-checkbox-line{
+  background: #fff;
+  padding: 12px 15px;
+  position: relative;
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+}
+
+ .yu-checkbox-line::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+.yu-checkbox-hd checkbox{
+  transform: scale(0.8);
+}
+.yu-checkbox-bd{
+  -webkit-flex: 1;
+  flex: 1;
+}
+.yu-checkbox-bd text{
+  line-height:24px;
+  font-size:15px;
+}
+
+/* ==================
+        单选框样式
+ ==================== */
+
+  .yu-radio{
+  background: #fff;
+  padding:12px 15px;
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+}
+ .yu-radio-line{
+  background: #fff;
+  padding: 12px 15px;
+  position: relative;
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+}
+
+ .yu-radio-line::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+.yu-radio-hd radio{
+  transform: scale(0.8);
+}
+.yu-radio-bd{
+  -webkit-flex: 1;
+  flex: 1;
+}
+.yu-radio-bd text{
+  line-height:24px;
+  font-size:15px;
+}

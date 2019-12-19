@@ -1,0 +1,5 @@
+<yu-collapse accordion>
+  <block slot="item">
+    <yu-collapse-list imgUrl='/img/default.png'  wx:for="{{collapse}}" wx:key="index" title="{{item.title}}" index="{{index}}" content="{{item.content}}"></yu-collapse-list>
+  </block>
+</yu-collapse>

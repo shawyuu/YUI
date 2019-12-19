@@ -1,0 +1,25 @@
+<view class="yu-indexlist" style="height:calc(100% - {{topHeight}}px);">
+  <view class="yu-indexlist-content">
+    <scroll-view class="scroll-view" scroll-y scroll-top="{{scrollTop}}" scroll-with-animation="{{animation}}" enable-back-to-top="{{backTop}}" bindscroll="scroll">
+      <view id="scrollListWrap">
+        <slot></slot>
+        <view class="scroll-view-list" wx:for="{{listData}}" wx:for-index="index" wx:for-item="list" wx:key="index">
+          <view class="scroll-view-title">{{list.letter}}</view>
+          <view class="scroll-view-item" hover-class="scroll-view-item-hover" wx:for="{{list.data}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtap="itemClick" data-index="{{idx}}" data-name="{{item}}">
+            <!-- <view class="scroll-view-item-hd" wx:if="{{item.img}}">
+              <image src="{{item.img}}"></image>
+            </view> -->
+            <view class="scroll-view-item-bd">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="scroll-indicator" wx:if="{{isShow && itemIndex != 0}}">{{listData[itemIndex].letter}}</view>
+    <view id="scrollNav" class="scroll-nav" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+      <view class="scroll-nav-item" wx:for="{{listData}}" wx:for-index="index" wx:for-item="list" wx:key="index">
+        <view class="item" wx:if="{{index == 0}}">★</view>
+        <view class="item" wx:else>{{list.letter}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "yu-button": "/components/button/button"
+  },
+  "navigationBarTitleText": "按钮Button",
+  "navigationBarTextStyle": "white"
+}

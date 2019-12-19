@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "yu-custom": "/components/custom/custom",
+    "yu-cell": "/components/cell/cell"
+  },
+  "navigationBarTitleText": "",
+  "navigationStyle":"custom",
+  "navigationBarTextStyle":"white"
+}

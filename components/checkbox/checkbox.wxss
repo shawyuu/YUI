@@ -1,0 +1,33 @@
+.yu-check{
+  background: #fff;
+  display: flex;
+  padding:12px 15px;
+  display: -webkit-flex;
+  
+}
+.yu-check-border{
+  position: relative;
+}
+.yu-check-border::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+.yu-check-checkbox{
+  transform: scale(0.8);
+}
+.yu-check-bd{
+  -webkit-flex: 1;
+  flex: 1;
+}
+.yu-check-text{
+  line-height:24px;
+  font-size:15px;
+}

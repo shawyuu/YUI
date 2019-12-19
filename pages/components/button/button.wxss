@@ -1,0 +1,8 @@
+.btn-spacing-block {
+  padding: 8px 15px;
+}
+
+.btn-spacing-inline {
+  padding: 5px;
+  display: inline-block;
+}

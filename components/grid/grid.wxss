@@ -1,0 +1,36 @@
+.yu-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.yu-grid-list {
+  width: 33.33%;
+  background: #fff;
+}
+
+.yu-grid-list-hover {
+  background: #f2f2f2;
+}
+
+.yu-grid-item {
+  text-align: center;
+  padding: 30rpx 20rpx;
+}
+
+.yu-grid-img {
+  padding-bottom: 10rpx;
+}
+
+.yu-grid-img image {
+  width: 24px;
+  height: 24px;
+}
+
+.yu-grid-item .yu-grid-text {
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

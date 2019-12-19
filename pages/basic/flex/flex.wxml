@@ -1,0 +1,32 @@
+<view class="content">
+  <view class="yu-flex">
+    <view class="yu-flex-item">
+      <view class="spacing">Flex</view>
+    </view>
+    <view class="yu-flex-item">
+      <view class="spacing">Flex</view>
+    </view>
+  </view>
+  <view class="yu-flex">
+    <view class="yu-flex-item">
+      <view class="spacing">Flex</view>
+    </view>
+    <view class="yu-flex-item">
+      <view class="spacing">Flex</view>
+    </view>
+    <view class="yu-flex-item">
+      <view class="spacing">Flex</view>
+    </view>
+  </view>
+  <view class="yu-flex">
+    <view>
+      <view class="spacing">Flex</view>
+    </view>
+    <view class="yu-flex-item">
+      <view class="spacing">Flex</view>
+    </view>
+    <view>
+      <view class="spacing">Flex</view>
+    </view>
+  </view>
+</view>

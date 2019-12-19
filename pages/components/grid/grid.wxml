@@ -1,0 +1,3 @@
+<yu-grid>
+  <yu-grid-item slot="{{index}}" wx:for="{{arr}}" wx:key="index" imgUrl="{{item.img}}" key="{{index}}" text="宫格" bindclick="girdClick"></yu-grid-item>
+</yu-grid>

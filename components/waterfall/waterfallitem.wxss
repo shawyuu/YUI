@@ -1,0 +1,87 @@
+.yu-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.yu-flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.yu-card {
+  background: #fff;
+}
+.yu-card-mask{
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:9;
+  background: rgba(0, 0, 0, 0.01);
+}
+.yu-card-img image{
+  width:100%;
+}
+
+.yu-card-content{
+  padding:0 20rpx;
+}
+
+.yu-card-text{
+  font-size:28rpx;
+  color:#000;
+  /* text-align: justify; */
+  padding-top:20rpx;
+}
+.yu-card-desc{
+  padding:14rpx 0;
+}
+.yu-card-header{
+  padding-right:10rpx;
+}
+.yu-card-header image{
+  width:22px;
+  height:22px;
+  margin:2px 0;
+  border-radius: 12px;
+}
+.yu-card-info{
+  font-size:28rpx;
+  color:#586b95;
+  line-height:26px;
+}
+.yu-card-more image{
+  width:26px;
+  height:26px;
+}
+
+.yu-card-operate{
+  position: relative;
+}
+.yu-card-action{
+  position: absolute;
+  right:35px;
+  top:0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  color:#fff;
+  padding:0 10px;
+   width:72px;
+  border-radius:5px; 
+}
+
+.yu-card-desc-mini{
+  width:26px!important;
+  height:26px!important;
+  padding:0!important;
+}
+.yu-card-radius{
+  border-radius:5px;
+}
+.yu-card-img-radius{
+  border-radius:5px 5px 0 0;
+}
+

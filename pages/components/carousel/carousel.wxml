@@ -1,0 +1,8 @@
+<yu-title title="全屏轮播"></yu-title>
+<view class="content">
+  <yu-carousel indicator-dots circular autoplay interval="5000" duration="500" imgUrls="{{imgUrl}}" bindclick="click"></yu-carousel>
+</view>
+<yu-title title="卡片式轮播"></yu-title>
+<view class="content">
+  <yu-carousel indicator-dots circular autoplay interval="5000" duration="500" isCard imgUrls="{{imgUrl}}" bindclick="click"></yu-carousel>
+</view>

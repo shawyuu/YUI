@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "轮播图Carousel",
+  "usingComponents": {
+    "yu-title": "/components/title/title",
+    "yu-carousel": "/components/carousel/carousel"
+  }
+}

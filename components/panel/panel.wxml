@@ -1,0 +1,25 @@
+<view class="yu-panel">
+  <view wx:if="{{!url}}" class="yu-panel-content" hover-class="yu-panel-content-hover" bindtap="bindClick">
+    <view class="yu-panel-l" wx:if="{{imgUrl}}">
+      <image class="yu-panel-thumb" src="{{imgUrl}}" style="width:{{imgWidth}}px;height:{{imgHeight}}px;border-radius:{{imgRadius}}px;" mode="aspectFill" />
+    </view>
+    <view class="yu-panel-r">
+      <view class="yu-media-title">{{title}}</view>
+      <view class="yu-media-desc" wx:if="{{desc}}">{{desc}}</view>
+      <slot wx:else name="desc"></slot>
+    </view>
+  </view>
+  <navigator wx:else url="{{url}}" class="yu-panel-content" hover-class="yu-panel-content-hover">
+    <view class="yu-panel-l" wx:if="{{imgUrl}}">
+      <image class="yu-panel-thumb" src="{{imgUrl}}" style="width:{{imgWidth}}px;height:{{imgHeight}}px;border-radius:{{imgRadius}}px;" mode="aspectFill" />
+    </view>
+    <view class="yu-panel-r">
+      <view class="yu-media-title">{{title}}</view>
+      <view class="yu-media-desc" wx:if="{{desc}}">{{desc}}</view>
+      <slot wx:else name="desc"></slot>
+    </view>
+  </navigator>
+  <view class="yu-panel-action" wx:if="{{action}}">
+    <slot name="action"/>
+  </view>
+</view>

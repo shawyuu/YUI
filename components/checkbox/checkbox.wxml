@@ -1,0 +1,8 @@
+<label class="yu-check {{showBorder?'yu-check-border':''}}"  data-value="{{value}}" catchtap="checkboxClick">
+  <view class="yu-check-hd">
+    <checkbox class="yu-check-checkbox" color="{{color}}" value="{{value}}" checked="{{checked}}" disabled="{{disabled}}"/>
+  </view>
+  <view class="yu-check-bd">
+    <text class="yu-check-text">{{text}}</text>
+  </view>
+</label>

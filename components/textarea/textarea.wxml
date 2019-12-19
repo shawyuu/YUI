@@ -1,0 +1,11 @@
+<view class="yu-textarea">
+  <view class="yu-form" data-value="{{value}}">
+    <view class="yu-form-hd" wx:if="{{label}}">
+      <text>{{label}}</text>
+    </view>
+    <view class="yu-form-bd">
+      <textarea class="yu-textarea-input" auto-height value="{{value}}" placeholder="{{placeholder}}" disabled="{{disabled}}" maxlength="{{maxlength}}" bindfocus="bindTextareaFocus"  bindblur="bindTextareaBlur" bindinput="bindTextareaInput"/>
+      <view class="yu-textarea-count">{{valueLength}}/{{maxlength}}</view>
+    </view>
+  </view>
+</view>

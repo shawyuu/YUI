@@ -1,0 +1,36 @@
+.yu-form {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  /* height: 48px; */
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.yu-form::after {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #e6e6e6;
+}
+
+.yu-form-hd {
+  line-height: 48px;
+  width: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.yu-form-bd {
+  -webkit-flex: 1;
+  flex: 1;
+}

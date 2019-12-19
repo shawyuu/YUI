@@ -1,0 +1,7 @@
+<swiper class="{{isCard? 'yu-carousel-card':'yu-carousel'}}" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" current="{{current}}" interval="{{interval}}" duration="{{duration}}"
+  circular="{{circular}}" vertical="{{vertical}}" previous-margin="{{previousMargin}}" next-margin="{{nextMargin}}" display-multiple-items="{{displayMultipleItems}}" skip-hidden-item-layout="{{skipHiddenItemLayout}}" easing-function="{{easingFunction}}"
+  bindchange="bindSwiperChange" bindtransition="bindSwiperTransition" bindanimationfinish="bindSwiperAnimationFinish">
+  <swiper-item wx:for="{{imgUrls}}" wx:key="index" class="{{cur==index?'current':''}}">
+    <image class='yu-carousel-img' src="{{item.img}}" data-url="{{item.url}}" catchtap="bindImgClick"></image>
+  </swiper-item>
+</swiper>

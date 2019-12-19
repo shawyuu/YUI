@@ -1,0 +1,8 @@
+<view wx:if="{{isPlain}}" class="yu-tag yu-tag-plain yu-tag-{{size}} {{isRound?'yu-tag-round':''}}" hover-class="yu-tag-plain-hover" style="color: {{color}};border-color:{{color}}"  bindtap="bindClick">
+  <slot></slot>
+  <text>{{value}}</text>
+</view>
+<view wx:else class="yu-tag yu-tag-{{size}} {{isRound?'yu-tag-round':''}}" hover-class="yu-tag-hover" style="background: {{color}}" bindtap="bindClick">
+  <slot></slot>
+  <text>{{value}}</text>
+</view>

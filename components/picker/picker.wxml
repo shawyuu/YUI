@@ -1,0 +1,41 @@
+<view class="yu-picker">
+  <view class="yu-form">
+    <view class="yu-form-hd" wx:if="{{label}}">
+      <text>{{label}}</text>
+    </view>
+    <view class="yu-form-bd">
+      <block wx:if="{{mode == 'selector'}}" >
+        <picker mode="{{mode}}" disabled="{{disabled}}" bindcancel="bindPickerCancel" bindchange="bindPickerChange" value="{{value}}" range="{{range}}" range-key="{{rangeKey}}">
+          <view class="yu-action-value" wx:if="{{value}}">{{text}}</view>
+          <view class="yu-action-placeholder" wx:else>{{placeholder}}</view>
+        </picker>
+      </block>
+      <block wx:if="{{mode == 'multiSelector'}}" >
+        <picker mode="{{mode}}" disabled="{{disabled}}" bindcancel="bindPickerCancel" bindchange="bindPickerChange" bindcolumnchange="bindPickerColumnChange" value="{{value}}" range="{{range}}" range-key="{{rangeKey}}">
+          <view class="yu-action-value" wx:if="{{ multiSelect}}">{{text}}</view>
+          <view class="yu-action-placeholder" wx:else>{{placeholder}}</view>
+        </picker>
+      </block>
+      <block wx:if="{{mode == 'time'}}" >
+        <picker mode="{{mode}}" disabled="{{disabled}}" bindcancel="bindPickerCancel" bindchange="bindPickerChange" value="{{value}}" start="{{start}}" end="{{end}}">
+          <view class="yu-action-value" wx:if="{{value}}">{{value}}</view>
+          <view class="yu-action-placeholder" wx:else>{{placeholder}}</view>
+        </picker>
+      </block>
+      <block wx:if="{{mode == 'date'}}" >
+        <picker mode="{{mode}}" disabled="{{disabled}}" bindcancel="bindPickerCancel" bindchange="bindPickerChange" value="{{value}}" start="{{start}}" end="{{end}}" fields="{{fields}}">
+          <view class="yu-action-value" wx:if="{{value}}">{{value}}</view>
+          <view class="yu-action-placeholder" wx:else>{{placeholder}}</view>
+        </picker>
+      </block>
+      <block wx:if="{{mode == 'region'}}" >
+        <picker mode="{{mode}}" disabled="{{disabled}}" bindcancel="bindPickerCancel" bindchange="bindPickerChange" value="{{value}}" custom-item="{{customItem}}">
+          <view class="yu-action-value" wx:if="{{regionSelect}}">{{text}}</view>
+          <view class="yu-action-value" wx:elif="{{!regionSelect && value}}">{{value[0]}}-{{value[1]}}-{{value[2]}}</view>
+          <view class="yu-action-placeholder" wx:else>{{placeholder}}</view>
+        </picker>
+      </block>
+    </view>
+    <view class="yu-form-ft {{showArrow? 'yu-cell-icon':''}}"></view>
+  </view>
+</view>

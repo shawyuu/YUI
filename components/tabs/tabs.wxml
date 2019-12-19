@@ -1,0 +1,20 @@
+<view class="yu-tabs">
+  <scroll-view scroll-x style="background:{{bgColor}};color:{{color}};"  scroll-with-animation class="yu-tab-navbar">
+    <view id="{{index}}" class="yu-navbar-item" style="color: {{index == current? currentColor:''}};border-bottom:3px solid {{index == current?currentColor:'none' }}" wx:for="{{tabs}}" wx:key="index" bindtap="tabClick">
+      {{item}}
+    </view>
+  </scroll-view>
+  <swiper wx:if="{{swipeable}}" class="yu-tab-panel" current="{{current}}" duration="300" bindchange="tabScroll">
+    <swiper-item wx:for="{{panelArr}}" wx:key="key">
+      <slot name="{{item.key}}"></slot>
+      <!-- <scroll-view scroll-y>
+        <slot name="{{item.key}}"></slot>
+      </scroll-view> -->
+    </swiper-item>
+  </swiper>
+  <block wx:else>
+    <view class="yu-tab-panel" wx:for="{{panelArr}}" wx:key="key">
+      <slot name="{{item.key}}"></slot>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,5 @@
+<view class="content">
+  <yu-carousel indicator-dots circular autoplay interval="5000" duration="500" isCard imgUrls="{{imgUrl}}"></yu-carousel>
+  <yu-title title="文章" imgUrl="/img/menu2s.png" text="更多"></yu-title>
+  <yu-panel title="标题栏" desc="在列表界面弹窗显示详细的进度信息，类似客户端APP的alert弹窗" imgUrl="/img/default.png" wx:for="{{8}}" wx:key="index"></yu-panel>
+</view>

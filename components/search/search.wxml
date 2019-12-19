@@ -1,0 +1,29 @@
+<view class="yu-search" style="height: {{isSearch? '100%':'48px'}};">
+  <view class="yu-search-header">
+    <view class="yu-search-header-hd"></view>
+    <view class="yu-search-header-bd">
+      <image class="search-ico" src='search_ico.png' mode="widthFix"></image>
+      <view class="yu-search-input">
+        <input type="text" confirm-type="search" value="{{inputVal}}" bindfocus="bindFocus" bindinput="bindInputKeyword" placeholder="{{placeholder}}" />
+      </view>
+      <view class="yu-search-input-clear" wx:if="{{inputVal.length > 0}}" catchtap="clearInput">
+        <image class="clear-ico" src='clear_ico.png' mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="yu-search-header-ft" wx:if="{{isSearch}}" catchtap="bindKeywordSearch" style="color:{{color}};">{{inputText}}</view>
+  </view>
+  <view class="yu-search-content" wx:if="{{isSearch}}">
+    <block wx:if="{{historyList.length > 0}}">
+      <view class="yu-search-content-title">历史搜索</view>
+      <view class="yu-search-content-list">
+        <view class="item" wx:for="{{historyList}}" wx:key="*this" data-keyword="{{item}}" catchtap="bindKeywordSearch">{{item}}</view>
+      </view>
+    </block>
+    <block wx:if="{{hotList.length > 0}}">
+      <view class="yu-search-content-title">热门搜索</view>
+      <view class="yu-search-content-list">
+        <view class="item" wx:for="{{hotList}}" wx:key="*this" data-keyword="{{item}}" catchtap="bindHotSearch">{{item}}</view>
+      </view>
+    </block>
+  </view>
+</view>

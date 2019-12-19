@@ -1,0 +1,1 @@
+<yu-table thead="{{thead}}" tbody="{{tbody}}" fixColumn="nickName" columnWidth="{{width}}"></yu-table>

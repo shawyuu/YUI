@@ -1,0 +1,20 @@
+.yu-grid-item {
+  text-align: center;
+  padding: 30rpx 20rpx;
+}
+
+.yu-grid-img {
+  padding-bottom: 10rpx;
+}
+
+.yu-grid-img image {
+  width: 24px;
+  height: 24px;
+}
+
+.yu-grid-item .yu-grid-text {
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

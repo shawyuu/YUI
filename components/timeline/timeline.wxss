@@ -1,0 +1,41 @@
+.yu-timeline{
+  padding:8px 15px;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  z-index: 0;
+}
+
+.yu-timeline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1rpx;
+  background: #ddd;
+  left: 35px;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.yu-timeline-icon{
+  width:24px;
+  height:24px;
+  line-height:24px;
+  margin:5px 12px 5px 8px;
+  background: #fff;
+  border-radius:12px;
+  text-align: center;
+}
+
+.yu-timeline-content {
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: block;
+  line-height: 1.4;
+  text-align: justify;
+  -webkit-flex: 1;
+  flex: 1;
+  background: #f2f2f2;
+  color: #333;
+}

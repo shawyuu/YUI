@@ -1,0 +1,51 @@
+.yu-tag {
+  display: inline-block;
+  font-size: 26rpx;
+  border-radius: 5rpx;
+  margin: 0 5px;
+  vertical-align: middle;
+  color:#fff;
+}
+.yu-tag-hover{
+  opacity: .75;
+  filter: alpha(opacity=75);
+}
+.yu-tag-small {
+  padding: 6rpx 16rpx;
+  font-size: 23rpx;
+}
+
+.yu-tag-normal {
+  padding: 8rpx 20rpx;
+  font-size: 25rpx;
+}
+
+.yu-tag-large {
+  padding: 10rpx 24rpx;
+  font-size: 29rpx;
+}
+
+.yu-tag-plain {
+  border: 1px solid #e6e6e6;
+  color: #fff;
+}
+.yu-tag-plain-hover{
+  opacity: .75;
+  filter: alpha(opacity=75);
+  background: #f2f2f2;
+}
+.yu-tag-plain.yu-tag-small {
+  padding: 4rpx 14rpx;
+}
+
+.yu-tag-plain.yu-tag-normal {
+  padding: 6rpx 18rpx;
+}
+
+.yu-tag-plain.yu-tag-large {
+  padding: 8rpx 22rpx;
+}
+
+.yu-tag-round {
+  border-radius: 100rpx;
+}

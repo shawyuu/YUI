@@ -1,0 +1,25 @@
+<view class="yu-input">
+  <view class="yu-form">
+    <view class="yu-form-hd" wx:if="{{label}}">
+      <text>{{label}}</text>
+    </view>
+    <view class="yu-form-bd">
+      <input wx:if="{{!inputSlot}}" class="yu-form-bd-input" value="{{value}}" type="{{type}}" password="{{password}}" confirm-type="{{confirmType}}"  placeholder="{{placeholder}}" maxlength="{{maxlength}}" disabled="{{disabled}}" bindfocus="bindFocus" bindinput="bindInput" bindblur="bindBlur" bindconfirm="bindConfirm"></input>
+      <block wx:else>
+        <slot name="input"></slot>
+      </block>
+    </view>
+    <view class="yu-form-ft">
+      <view wx:if="{{text && !src}}" class="yu-form-input-btn" hover-class="yu-form-input-btn-hover" style="color:{{textColor}};" catchtap="bindBtn">{{text}}</view>
+      <view wx:if="{{!text && src}}" class="yu-form-imgcode" catchtap="bindImgcode">
+        <image src='{{src}}' mode="aspectFill"></image>
+      </view>
+      <block wx:if="{{!text && !src && icon}}">
+        <image class="yu-form-input-icon" src='{{icon}}_ico.png' mode="widthFix"></image>
+      </block>
+      <block wx:if="{{!text && !src && !icon}}">
+        <slot name="action"></slot>
+      </block>
+    </view>
+  </view>
+</view>

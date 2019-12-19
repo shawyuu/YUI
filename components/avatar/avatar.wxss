@@ -1,0 +1,64 @@
+.yu-avatar{
+  position: relative;
+  display: inline-flex;
+}
+.yu-avatar .yu-avatar-content{
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  vertical-align: middle;
+  font-size: 15px;
+  overflow: hidden;
+}
+.yu-avatar image{
+  width: 100%;
+}
+.yu-avatar-tag{
+  position: absolute;
+  right:-5px;
+  top:-5px;
+  z-index:200;
+  background: #e6e6e6;
+  color:#fff;
+  padding:0 3px;
+  min-width:8px;
+  height:14px;
+  line-height:14px;
+  font-size:10px;
+  vertical-align: middle;
+  text-align:center;
+  border:2px solid #fff;
+  border-radius:10px;
+}
+
+.yu-avatar-group {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  padding: 0 10rpx 0 40rpx;
+  display: inline-block;
+}
+
+.yu-avatar-group .yu-avatar-content{
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  width:48px;
+  height:48px;
+  line-height: 48px;
+  vertical-align: middle;
+  font-size: 15px;
+  border-radius:1000px;
+  overflow: hidden;
+  margin-left: -20px;
+  border: 6rpx solid #fff;
+}

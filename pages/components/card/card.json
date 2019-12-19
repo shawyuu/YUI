@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "yu-card": "/components/card/card",
+    "yu-icon": "/components/icon/icon"
+  },
+  "navigationBarTitleText": "卡片Card"
+}

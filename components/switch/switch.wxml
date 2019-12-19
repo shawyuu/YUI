@@ -1,0 +1,11 @@
+<view class="yu-switch">
+  <view class="yu-form" data-value="{{value}}">
+    <view class="yu-form-hd" wx:if="{{label}}">
+      <text>{{label}}</text>
+    </view>
+    <view class="yu-form-bd"></view>
+    <view class="yu-form-ft">
+      <switch class="yu-form-switch" checked="{{checked}}" disabled="{{disabled}}" type="{{type}}" color="{{color}}" bindchange="bindSwitchChange"/>
+    </view>
+  </view>
+</view>

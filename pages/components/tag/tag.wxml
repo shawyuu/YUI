@@ -1,0 +1,38 @@
+<yu-title title="基础标签"></yu-title>
+<view class="yu-tag-content">
+  <yu-tag value="标签"></yu-tag>
+  <yu-tag value="标签" color="#3565ee"></yu-tag>
+  <yu-tag value="标签" color="#82be30"></yu-tag>
+  <yu-tag value="标签" color="#39b54a"></yu-tag>
+  <yu-tag value="标签" color="#ff564a"></yu-tag>
+</view>
+<yu-title title="镂空标签"></yu-title>
+<view class="yu-tag-content">
+  <yu-tag value="标签" isPlain="{{false}}"></yu-tag>
+  <yu-tag value="标签" color="#3565ee" isPlain></yu-tag>
+  <yu-tag value="标签" color="#82be30" isPlain></yu-tag>
+  <yu-tag value="标签" color="#39b54a" isPlain></yu-tag>
+  <yu-tag value="标签" color="#ff564a" isPlain></yu-tag>
+</view>
+<yu-title title="圆角标签"></yu-title>
+<view class="yu-tag-content">
+  <yu-tag value="标签" isRound></yu-tag>
+  <yu-tag value="标签" color="#3565ee" isRound></yu-tag>
+  <yu-tag value="标签" color="#82be30" isRound></yu-tag>
+  <yu-tag value="标签" color="#39b54a" isRound></yu-tag>
+  <yu-tag value="标签" color="#ff564a" isRound></yu-tag>
+</view>
+<yu-title title="圆角镂空标签"></yu-title>
+<view class="yu-tag-content">
+  <yu-tag value="标签" isRound isPlain></yu-tag>
+  <yu-tag value="标签" color="#3565ee" isRound isPlain></yu-tag>
+  <yu-tag value="标签" color="#82be30" isRound isPlain></yu-tag>
+  <yu-tag value="标签" color="#39b54a" isRound isPlain></yu-tag>
+  <yu-tag value="标签" color="#ff564a" isRound isPlain></yu-tag>
+</view>
+<yu-title title="标签尺寸"></yu-title>
+<view class="yu-tag-content">
+  <yu-tag color="#3565ee" value="标签" size="small"></yu-tag>
+  <yu-tag color="#3565ee" value="标签"></yu-tag>
+  <yu-tag color="#3565ee" value="标签" size="large"></yu-tag>
+</view>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "瀑布流Waterfall",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "yu-waterfall": "/components/waterfall/waterfall",
+    "yu-waterfall-item": "/components/waterfall/waterfallitem"
+  }
+}

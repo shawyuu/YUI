@@ -1,0 +1,4 @@
+<view class="yu-timebox">
+  <view class="yu-time">{{time}}</view>
+  <slot></slot>
+</view>

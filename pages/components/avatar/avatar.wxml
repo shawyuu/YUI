@@ -1,0 +1,47 @@
+<view class="yu-bg-white" style="margin:10px 0;">
+  <yu-title title="头像形状" titleSize="14"></yu-title>
+  <view class="content">
+     <yu-avatar src="/img/default.png" shape="24"></yu-avatar>
+     <yu-avatar src="/img/default.png" shape="5"></yu-avatar>
+     <yu-avatar src="/img/default.png" shape="10"></yu-avatar>
+     <yu-avatar src="/img/default.png" shape="0"></yu-avatar>
+  </view>
+ </view>
+ <view class="yu-bg-white" style="margin:10px 0;">
+  <yu-title title="头像尺寸" titleSize="14"></yu-title>
+  <view class="content">
+     <yu-avatar src="/img/default.png" shape="24" size="24"></yu-avatar>
+     <yu-avatar src="/img/default.png" shape="24" size="36"></yu-avatar>
+     <yu-avatar src="/img/default.png" shape="24" size="48"></yu-avatar>
+     <yu-avatar src="/img/default.png" shape="30" size="60"></yu-avatar>
+  </view>
+ </view>
+<view class="yu-bg-white" style="margin:10px 0;">
+  <yu-title title="带标签的头像" titleSize="14"></yu-title>
+  <view class="content">
+     <yu-avatar src="/img/default.png" tagText="9" size="36" tagBg="#3565ee"></yu-avatar>
+     <yu-avatar src="/img/default.png" tagText="88" size="36" shape="24" tagBg="#ff3333"></yu-avatar>
+     <yu-avatar src="/img/default.png" size="36" shape="24" tagBg="#ff3333" isSlot>
+      <yu-icon type="female" color="#fff" size="10" lineHeight="1.4"></yu-icon>
+     </yu-avatar>
+  </view>
+ </view>
+ <view class="yu-bg-white" style="margin:10px 0;">
+  <yu-title title="头像组" titleSize="14"></yu-title>
+  <view class="content">
+     <yu-avatar size="36" avatarArr="{{arr}}"></yu-avatar>
+  </view>
+ </view>
+  <view class="yu-bg-white" style="margin:10px 0;">
+  <yu-title title="其他头像" titleSize="14"></yu-title>
+  <view class="content">
+     <yu-avatar text="张" shape="24" size="48"></yu-avatar>
+     <yu-avatar text="李" size="48" bgColor="#3565ee"></yu-avatar>
+     <yu-avatar text="A" shape="24" textSize="20" bgColor="#07c160" size="48" tagBg="#3565ee" isSlot>
+      <yu-icon type="male" color="#fff" size="10" lineHeight="1.4"></yu-icon>
+     </yu-avatar>
+  </view>
+ </view>
+ 
+
+
