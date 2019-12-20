@@ -11,7 +11,7 @@ Component({
       type: Boolean,
       value: false
     },
-    isBack: { //是否显示返回图标
+    isHome: { //是否显示HOME图标
       type: Boolean,
       value: false
     },
@@ -29,7 +29,7 @@ Component({
     }, 
     bgColor: { // 导航和状态栏背景颜色
       type: String,
-      value: ''
+      value: '#333'
     },
     bgImg: { // 导航和状态栏背景图片
       type: String,
@@ -46,11 +46,16 @@ Component({
     leftWidth:'',
     capWidth: '', //胶囊的宽度
     midWidth:'',//中间内容宽度
-    ios:false
+    ios:false,
+    page:0 //页面栈长度
   },
   lifetimes: {
     attached: function () {
       let _this=this;
+      let page = getCurrentPages()
+      _this.setData({
+        page: page.length
+      })
       wx.getSystemInfo({
         success: e => {
           if (e.system.match("iOS")) {
@@ -83,10 +88,14 @@ Component({
   },
   methods: {
     //自定义返回图标方法
-    bindNavBack(){
-      wx.navigateBack({
-        delta:1
-      })
+    bindLeft(){
+      if(this.data.isHome){
+        this.triggerEvent('click')
+      }else{
+        wx.navigateBack({
+          delta: 1
+        })
+      }
     },
     //自定义胶囊导航左侧图标
     bindCapLeft: function () {

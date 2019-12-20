@@ -1,30 +1,36 @@
 @import "icon.wxss";
 
 .yu-custom {
-  height:100%;
+  height: 100%;
 }
+
 .yu-custom-header {
   background-repeat: no-repeat;
-  background-size:100%;
-  position: relative；
+  background-size: 100%;
+  position: relative；;
 }
-.yu-custom-bgimg{
+
+.yu-custom-bgimg {
   position: absolute;
-  left:0;
-  right:0;
-  top:0;
-  z-index:-1;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
-.yu-custom-bgimg image{
-  width:100%;
+
+.yu-custom-bgimg image {
+  width: 100%;
 }
-.yu-custombar{
-  position: relative；
+
+.yu-custombar {
+  position: relative；;
 }
+
 .yu-custom-content {
   overflow: auto;
-  z-index:1;
+  z-index: 1;
 }
+
 .yu-custombar-content-box {
   display: inline-block;
 }
@@ -34,40 +40,50 @@
   display: -webkit-flex;
   display: flex;
 }
-.yu-custombar-capsule{
-  border:1rpx solid rgba(255,255,255,.25);
-  border-radius:60rpx;
+
+.yu-custombar-capsule {
+  border: 1rpx solid rgba(255, 255, 255, 0.25);
+  border-radius: 60rpx;
   box-sizing: border-box;
   text-align: center;
 }
 
-.bg-black{
-  background: rgba(255,255,255,.6);
-  border:1rpx solid rgba(0,0,0,.1);
+.bg-black {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1rpx solid rgba(0, 0, 0, 0.1);
 }
-.bg-white{
-  background: rgba(0,0,0,.15);
-  border:1rpx solid rgba(255,255,255,.25);
+
+.bg-white {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1rpx solid rgba(255, 255, 255, 0.25);
 }
-.yu-custombar-capsule .icon{
-  font-size:22px;
+
+.yu-custombar-capsule .icon {
+  font-size: 22px;
   display: inline-block;
-  margin:4px 2px;
-  padding:0 14rpx;
+  margin: 4px 2px;
+  padding: 0 14rpx;
 }
 
-.yu-custombar-back .icon{
-  font-size:22px;
+.yu-custombar-home .icon{
+  font-size:20px;
   display: inline-block;
-  padding:11px 5px 11px 3px;
+  padding-left:8px;
+  padding-right:5px;
 }
 
+.yu-custombar-back .icon {
+  font-size:20px;
+  display: inline-block;
+  padding-left:3px;
+  padding-right:5px;
+}
 
-.color-black{
+.color-black {
   color: #000;
 }
 
-.color-white{
+.color-white {
   color: #fff;
 }
 
@@ -76,10 +92,17 @@
   -webkit-flex: 1;
   flex: 1;
 }
-.yu-custombar-title{
+
+.yu-custombar-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.yu-custombar-title-left{
   padding-left:15px;
 }
 
-.yu-custombar-title-center{
-  text-align:center;
+.yu-custombar-title-center {
+  text-align: center;
 }

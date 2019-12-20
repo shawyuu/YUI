@@ -1,25 +1,30 @@
 <view class="yu-custom">
-  <view class="yu-custom-header" style="height:{{customHeight}}px;background-color: {{bgColor}};">
-    <view class="yu-custom-bgimg" wx:if="{{bgImg}}">
+  <view class="yu-custom-header" style="height:{{customHeight}}px;">
+    <view class="yu-custom-bgimg" style="background-color: {{bgColor}};" wx:if="{{bgImg}}">
       <image src="{{bgImg}}" style="height:{{customHeight}}px;" mode="aspectFill"></image>
     </view>
     <view class="yu-custombar" style="height:{{custombar}}px;padding-top:{{statusbar}}px;">
       <view class="yu-custombar-content-box" style="width: {{leftWidth}}px">
         <view class="yu-custombar-content">
           <block>
-            <view class="yu-custombar-capsule bg-{{colorTheme}}" wx:if="{{isCap && !isBack}}" style="margin:{{custom.top-statusbar}}px {{marginWidth}}px;width: {{capWidth}}px;height:{{custom.height}}px;">
+            <view class="yu-custombar-capsule bg-{{colorTheme}}" wx:if="{{isCap}}" style="margin:{{custom.top-statusbar}}px {{marginWidth}}px;width: {{capWidth}}px;height:{{custom.height}}px;">
               <view class="icon-{{capIconLeft}} color-{{colorTheme}} icon" bindtap="bindCapLeft"></view>
               <view class="icon-{{capIconRight}} color-{{colorTheme}} icon" bindtap="bindCapRight"></view>
             </view>
-            <view class="yu-custombar-back" wx:elif="{{!isCap && isBack}}" style="height:{{custombar}}px;">
-              <view class="icon-return color-{{colorTheme}} icon" bindtap="bindNavBack"></view>
+            <view class="yu-custombar-back" wx:elif="{{!isCap && page > 1}}" style="height:{{custombar}}px;">
+              <view class="icon-return color-{{colorTheme}} icon" style="line-height:{{custombar}}px;" bindtap="bindLeft"></view>
+            </view>
+            <view class="yu-custombar-home" wx:elif="{{!isCap && isHome}}" style="height:{{custombar}}px;">
+              <view class="icon-home color-{{colorTheme}} icon" style="line-height:{{custombar}}px;" bindtap="bindLeft"></view>
             </view>
           </block>
           <view class="yu-custombar-item" style="height:{{custombar}}px;line-height:{{custombar}}px;">
             <block wx:if="{{title}}"> 
               <view wx:if="{{isCap}}" class="yu-custombar-title-center color-{{colorTheme}}">{{title}}</view>
+              <view wx:elif="{{!isCap && ios && (page > 1 || isHome)}}" class="yu-custombar-title-center color-{{colorTheme}}" style="padding-left:{{capWidth+2*marginWidth -33}}px;">{{title}}</view>
               <view wx:elif="{{!isCap && ios}}" class="yu-custombar-title-center color-{{colorTheme}}" style="padding-left:{{capWidth+2*marginWidth}}px;">{{title}}</view>
-              <view wx:else class="yu-custombar-title color-{{colorTheme}}">{{title}}</view>
+              <view wx:elif="{{!isCap && !ios && (page > 1 || isHome)}}" class="yu-custombar-title color-{{colorTheme}}">{{title}}</view>
+              <view wx:else class="yu-custombar-title-left color-{{colorTheme}}">{{title}}</view>
             </block>
             <view wx:else>
               <slot name="header"></slot>
